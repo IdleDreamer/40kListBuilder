@@ -7,7 +7,6 @@
     "forin": true,
     "indent": [true, "spaces"],
     "label-position": true,
-    "max-line-length": [true, 140],
     "member-access": true,
     "member-ordering": [true,
       "public-before-private",
@@ -32,10 +31,8 @@
     "no-shadowed-variable": true,
     "no-string-literal": true,
     "no-switch-case-fall-through": true,
-    "no-trailing-whitespace": true,
     "no-unused-expression": true,
     "no-var-keyword": true,
-    "object-literal-sort-keys": true,
     "one-line": [true,
       "check-open-brace",
       "check-catch",
@@ -43,10 +40,9 @@
       "check-finally",
       "check-whitespace"
     ],
-    "quotemark": [true, "single", "avoid-escape"],
     "radix": true,
     "semicolon": true,
-    "trailing-comma": [true, {
+    "trailing-comma": [false, {
       "singleline": "never",
       "multiline": "always"
     }],
@@ -58,13 +54,6 @@
       "property-declaration": "nospace",
       "variable-declaration": "nospace"
     }],
-    "variable-name": false,
-    "whitespace": [true,
-      "check-branch",
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type"
-    ]
+    "variable-name": false
   }
 }
