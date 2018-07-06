@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40k List Builder</title>
+  <link rel="stylesheet" type="text/css" href="/Content/40kListBuilder/style.css">
+</head>
+<body>
+
+  <div id="topBar">
+    <img src="/Content/40kListBuilder/resources/icons/40k.png"/>
+    <h1>8th Edition Eldar List Builder </h1>
+    <table>
+      <tr>
+        <td class="unselectedCost">
+          <table id="availableCosts">
+            <tr><td id="POWER" onclick="costControl.setCostProfile(this.id)"></td></tr>
+            <tr><td id="POINTS" onclick="costControl.setCostProfile(this.id)"></td></tr>
+            <tr><td id="WOUNDS" onclick="costControl.setCostProfile(this.id)"></td></tr>
+            <tr><td id="MODELS" onclick="costControl.setCostProfile(this.id)"></td></tr>
+          </table>
+        </td>
+        <td class="selectedCost" id="selectedCost">
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="sidenav" class="sidenav">
+    <p class="closebtn" onclick="factionControl.toggleNav()">&#9776;</p>
+    <ul id="factionList">
+    </ul>
+    <div class="spacer"></div>     
+  </div>
+
+  <div id="availableList">
+    <h2>Select A Faction</h2>
+  </div>
+
+  <div id="newList">
+    <div id="newListContents"> 
+    </div>
+  </div> 
+
+  <div id="editor">
+    <div id="editorForm">
+      
+    </div>
+  </div>
+
+  <script src="/Content/40kListBuilder/js/40kListBuilder.min.js"></script>
+      
+</body>
+</html> 

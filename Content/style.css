@@ -1,0 +1,537 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  color: black;
+  padding-left: 8px;
+}
+
+.spacer {
+  height: 200px;
+}
+
+#topBar {
+  overflow: hidden;
+  background-color: #141616;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  height: 80px;
+}
+
+#topBar img {
+  display: block;
+  align-content: right;
+  float: left;
+}
+
+#topBar h1 {
+  padding-left: 10px;
+  margin: 0;
+  color: white;
+  line-height: 80px;
+  vertical-align: middle;
+  float: left;
+}
+
+#topBar h3 {
+  padding-left: 15px;
+  margin: 0;
+  color: #BBBBBB;
+  line-height: 80px;
+  vertical-align: middle;
+  float: left;
+}
+
+#topBar table {
+  margin: 0;
+  color: #BBBBBB;
+  float: right;
+}
+
+#topBar table tr {
+  float: none;
+}
+
+#topBar table td {
+  padding-left: 10px;
+}
+
+#topBar table .unselectedCost {
+  font-size: 16px;
+  text-align: right;
+}
+
+#topBar table .unselectedCost td:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#topBar table .selectedCost {
+  padding-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#topBar table .selectedCost .costValue{
+  font-size: 30px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin-top: 80px;
+}
+
+.sidenav ul li {
+  list-style-type: none;
+  vertical-align: middle;
+  padding-top: 8px;
+}
+
+.sidenav ul {
+  margin: 0;
+  padding: 12px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.sidenav li:hover, .offcanvas li:focus {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.sidenav img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.sidenav .closebtn {
+  padding: 0px 8px 8px 10px;
+  text-decoration: none;
+  color: #818181;
+  transition: 0.3s;
+  position: absolute;
+  top: 0px;
+  right: 7px;
+  font-size: 36px;
+  margin-top: 8px;
+  margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.sidenav::-webkit-scrollbar { 
+  display: none; 
+}
+
+hr {
+  padding: 0.5px;
+  margin: 2px;
+  background-color: #777777;
+}
+
+#availableList {
+  transition: .5s;
+  height: 100%;
+  width: 350px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #cccccc;
+  padding-top: 80px;
+  margin-left: 60px;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+#availableList ul {
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+}
+
+#availableList ul ul {
+  width: 320px;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 5;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  color: #272525;
+}
+
+#availableList ul ul li {
+  width: 320px;
+  list-style: none;
+  font-size: 18px;
+  margin-left: -15px;
+  padding-left: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#availableList::-webkit-scrollbar {
+  display: none;
+}
+
+#unitDetails {
+  font-size: 12px;
+  color: #444444;
+}
+
+#unitDetails td {
+  width: 70px;
+  border-left: solid #aaaaaa 1px;
+  border-bottom: solid #aaaaaa 1px;
+}
+
+#availableList ul ul li:hover {
+  cursor: pointer;
+  background-color: #aaaaaa;
+}
+
+#typeHeader img {
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin: 10px;
+}
+
+#typeHeader h1 {
+  float: left;
+  margin: 0;
+  line-height: 70px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+#newList {
+  transition: .5s;
+  height: 100%;
+  width: 900px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 80px;
+  padding-left: 10px;
+  position: relative;
+  margin: auto;
+}
+
+#newList table {
+  clear: both;
+  margin: 10px;
+  border-collapse: collapse;
+  font-size: 11px;
+  page-break-inside: avoid;
+}
+
+#newList th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: center;  
+  width: 70px;
+  background-color: lightgrey;
+}
+
+#newList #name_H {
+  width: 100px;
+  text-align: left;
+}
+
+#newList #name {
+  width: 100px;
+  text-align: left;
+}
+
+#newList td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: left;  
+  width: 60px;
+}
+
+#newList .name {
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#newList .cost {
+  text-align: right;
+  border: none;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#newList .stat{
+  text-align: center;
+}
+
+#newList .description {
+  font-size: 10px;
+}
+
+#newList .mediumDescription {
+  font-size: 10px;
+}
+
+#newList .leftHeader {
+  text-align: left;
+  font-size: 10px;
+  width: 130px
+}
+
+#newList .columnDescription {
+  font-size: 10px;
+}
+
+#newList .smallDescription {
+  font-size: 10px;
+}
+
+#newList .abilities {
+  background-color: lightgrey;
+}
+
+#newList .allegiance {
+  background-color: lightgrey;
+}
+
+#newList .keywords {
+  background-color: lightgrey;
+}
+
+#newList .psykerAbilities {
+  background-color: lightgrey;
+}
+
+#newList .unitTable {
+  float:left;
+}
+
+#newList .clear {
+  clear: both;
+}
+
+#newList ul > :first-child {
+  margin-top: 30px;
+}
+
+#newList .unitControls {
+  float: left;
+  width: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#newList .unitControls img {
+  width: 30px;
+  height: 30px;
+}
+
+#newList .button:hover {
+  cursor: pointer;
+}
+
+#editor {
+  background-color: rgba(0,0,0,0.7);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-x: hidden;
+}
+
+#editorForm {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  width: 900px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+#editorForm table {
+  border-collapse: collapse;
+}
+
+#editorForm #name_H {
+  width: 100px;
+  text-align: left;
+}
+
+#editorForm .name {
+  font-size: 16pt;
+  padding-bottom: 20px;
+  width: 100px;
+  text-align: left;
+  font-weight: bold;
+}
+
+#editorForm .cost {
+  font-size: 12pt;
+  padding-bottom: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+
+#editorForm th {
+  padding: 2px;
+  text-align: center;  
+  width: 70px;
+  background-color: lightgrey;
+}
+
+#editorForm td {
+  padding: 2px;
+  text-align: left;  
+  width: 60px;
+}
+
+#editorForm .stat{
+  text-align: center;
+}
+
+#editorForm #name {
+  text-align: left;
+}
+
+#editorForm .description {
+  font-size: 10px;
+}
+
+#editorForm .mediumDescription {
+  font-size: 10px;
+}
+
+#editorForm .leftHeader {
+  text-align: left;
+  width: 130px
+}
+
+#editorForm #abilities {
+  font-size: 10px;
+}
+
+#editorForm .allegiance {
+  background-color: lightgrey;
+}
+
+#editorForm .allegiance th {
+  text-align: left;
+}
+
+#editorForm .remove {
+  width: 100px;
+  text-align: center;
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+}
+
+#editorForm .add {
+  width: 100px;
+  text-align: center;
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+}
+
+#editorForm select {
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+}
+
+#editorForm option {
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+}
+
+#editorForm .closeButton {
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
+  font-size: 18pt;
+  border: none;
+  border-radius: 0;
+  background-color: black;
+  color: white;
+}
+
+#editorForm .closeButton:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px black solid;
+}
+
+#editorForm .modelType {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+#editForm .seperator {
+  background-color: white;
+}
+
+@media print {
+  #topBar img, h1, h3 {
+      display: none;
+  }
+
+  .sidenav {
+      width: 0;
+      padding: 0;
+      margin: 0;
+      display: none;
+  }
+
+  #availableList {
+      width: 0;
+      padding: 0;
+      margin: 0;
+      display: none;
+  }
+
+  #newList {
+      padding-left: 0!important;
+  }
+
+  .unitControls {
+      display: none;
+  }
+}

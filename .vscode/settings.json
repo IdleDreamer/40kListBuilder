@@ -1,0 +1,19 @@
+{
+  "editor.folding": true,
+  "editor.parameterHints": true,
+  "editor.autoClosingBrackets": true,
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": true,
+  "editor.scrollBeyondLastLine": true,
+  "editor.insertSpaces": true,
+  "editor.codeLens": true,
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    80
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "src/**/*.js": true
+  }
+}
