@@ -39,8 +39,8 @@ let list = new ListBuilder();
 list.loadFactionData();
 
 /**
- * 1. Load all the supported faction files X
- * 2. Create the cost header 
+ * X 1. Load all the supported faction files
+ * X 2. Create the cost header 
  * 3. Create the faction list
  * 4. Create the army list
  * 5.   Create the available unit list
