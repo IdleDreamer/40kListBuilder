@@ -19,22 +19,22 @@ export default class FactionList {
     (document.getElementById("sidenav") as HTMLElement).style.width = "350px";
     (document.getElementById("availableList") as HTMLElement).style.marginLeft = "350px";
     (document.getElementById("newList") as HTMLElement).style.paddingLeft = "700px";
+    this.open = true;
   }
 
   public closeNav() {
     (document.getElementById("sidenav") as HTMLElement).style.width = "60px";
     (document.getElementById("availableList") as HTMLElement).style.marginLeft = "60px";
     (document.getElementById("newList") as HTMLElement).style.paddingLeft = "410px";
+    this.open = false;
   }
 
   public toggleNav() {
     if (this.open) {
       this.closeNav();
-      this.open = false;
     }
     else {
       this.openNav();
-      this.open = true;
     }
   }
 
@@ -44,6 +44,9 @@ export default class FactionList {
 
   public setupFactionList() {
     this.menuBtn.onclick = () => {this.toggleNav();};
+    if (!this.isOpen()) {
+      this.openNav();
+    }
     for (let faction in Factions) {
       if (Settings.supportedFactions.indexOf(faction) !== -1) {
         this.factionList.appendChild(this.createFactionListElement(faction, true));
@@ -62,8 +65,15 @@ export default class FactionList {
     if (!supported) {
       listItem.className = "factionNotSupported";
     }
-    listItem.onclick = () => {ListBuilder.unitList.factionSelected(faction);};
+    listItem.onclick = () => {this.factionSelected(faction);};
     listItem.innerHTML = '<img src="Content/40kListBuilder/resources/icons/' + Factions[faction].icon +'"/>' + faction;
     return listItem;
+  }
+
+  private factionSelected(faction: string) {
+    ListBuilder.unitList.factionSelected(faction);
+    if (this.isOpen()) {
+      this.closeNav();
+    }
   }
 }

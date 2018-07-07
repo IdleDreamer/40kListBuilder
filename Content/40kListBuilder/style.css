@@ -102,7 +102,7 @@ h2 {
   padding-left: 10px;
   text-decoration: none;
   font-size: 26px;
-  color: #818181;
+  color: #CACACA;
   display: block;
   transition: 0.3s;
   text-align: left;
@@ -119,8 +119,9 @@ h2 {
   cursor: default!important;
 }
 
-.factionNotSupported img{
+.factionNotSupported img {
   filter: brightness(40%);
+  -webkit-filter: brightness(40%);
 }
 
 .sidenav img {
