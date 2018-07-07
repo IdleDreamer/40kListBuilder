@@ -24,7 +24,7 @@ export default class UnitList {
     this.renderList();
   }
 
-  public renderList() {
+  private renderList() {
     let availableListHTML = (document.getElementById("availableList") as HTMLElement);
     availableListHTML.innerHTML = '<h2>' + this.currentFaction + '</h2>';
 

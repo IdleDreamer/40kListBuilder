@@ -41,9 +41,9 @@ list.loadFactionData();
 /**
  * X 1. Load all the supported faction files
  * X 2. Create the cost header 
- * 3. Create the faction list
+ * X 3. Create the faction list
  * 4. Create the army list
- * 5.   Create the available unit list
+ * X 5.   Create the available unit list
  * 6.   Populate the army list
  * 7.   Create the editor
  * 

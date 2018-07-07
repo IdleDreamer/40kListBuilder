@@ -15,21 +15,21 @@ export default class FactionList {
     this.setupFactionList();
   }
 
-  public openNav() {
+  private openNav() {
     (document.getElementById("sidenav") as HTMLElement).style.width = "350px";
     (document.getElementById("availableList") as HTMLElement).style.marginLeft = "350px";
     (document.getElementById("newList") as HTMLElement).style.paddingLeft = "700px";
     this.open = true;
   }
 
-  public closeNav() {
+  private closeNav() {
     (document.getElementById("sidenav") as HTMLElement).style.width = "60px";
     (document.getElementById("availableList") as HTMLElement).style.marginLeft = "60px";
     (document.getElementById("newList") as HTMLElement).style.paddingLeft = "410px";
     this.open = false;
   }
 
-  public toggleNav() {
+  private toggleNav() {
     if (this.open) {
       this.closeNav();
     }
@@ -38,11 +38,11 @@ export default class FactionList {
     }
   }
 
-  public isOpen() {
+  private isOpen() {
     return this.open;
   }
 
-  public setupFactionList() {
+  private setupFactionList() {
     this.menuBtn.onclick = () => { this.toggleNav(); };
     if (!this.isOpen()) {
       this.openNav();

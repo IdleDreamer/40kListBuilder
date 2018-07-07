@@ -1,6 +1,10 @@
 // TODO: should just be a list of names, icons, and file locations
 
 let factions = {
+  "Adeptus Custodes": {
+    "dataFile": "AdeptusCustodes.json",
+    "icon": "talonsoftheemperor.png"
+  },
   "Adeptus Mechanicus": {
     "dataFile": "AdeptusMechanicus.json",
     "icon": "adeptusmechanicus.png"
@@ -17,6 +21,10 @@ let factions = {
     "dataFile": "Chaosaemons.json",
     "icon": "chaosdaemons.png"
   },
+  "Chaos Space Marines": {
+    "dataFile": "ChaosSpaceMarines.json",
+    "icon": "chaosdaemons.png"
+  },
   "Craftworlds": {
     "dataFile": "Craftworlds.json",
     "icon": "craftworld.png"
@@ -25,17 +33,17 @@ let factions = {
     "dataFile": "DarkAngles.json",
     "icon": "darkangels.png"
   },
+  "Death Guard": {
+    "dataFile": "DeathGuard.json",
+    "icon": "deathwatch.png"
+  },
   "Deathwatch": {
     "dataFile": "Deathwatch.json",
-    "icon": "deathwatch.png"
+    "icon": "hereticastartes.png"
   },
   "Drukhari": {
     "dataFile": "Drukhari.json",
     "icon": "drukhari.png"
-  },
-  "Genestealer Cults": {
-    "dataFile": "GenestealerCults.json",
-    "icon": "genestealers.png"
   },
   "Grey Knights": {
     "dataFile": "GreyKnights.json",
@@ -45,21 +53,9 @@ let factions = {
     "dataFile": "Harlequins.json",
     "icon": "harlequins.png"
   },
-  "Heretic Astartes": {
-    "dataFile": "HereticAstartes.json",
-    "icon": "hereticastartes.png"
-  },
-  "Imperial Agents": {
-    "dataFile": "ImperialAgents.json",
-    "icon": "imperialagents.png"
-  },
   "Imperial Knights": {
     "dataFile": "ImperialKnights.json",
     "icon": "imperialknights.png"
-  },
-  "Legion of the Damned": {
-    "dataFile": "LegionOfTheDamned.json",
-    "icon": "legionofthedamned.png"
   },
   "Necrons": {
     "dataFile": "Necrons.json",
@@ -69,25 +65,17 @@ let factions = {
     "dataFile": "Orks.json",
     "icon": "orks.png"
   },
-  "Questor Traitoris": {
-    "dataFile": "QuestorTraitoris.json",
-    "icon": "questortraitoris.png"
-  },
   "Space Marines": {
     "dataFile": "SpaceMarines.json",
     "icon": "spacemarines.png"
-  },
-  "Space Wolves": {
-    "dataFile": "SpaceWolves.json",
-    "icon": "spacewolves.png"
   },
   "T'au Empire": {
     "dataFile": "TauEmpire.json",
     "icon": "tau.png"
   },
-  "Talons of the Emporer": {
-    "dataFile": "TalonsOfTheEmporer.json",
-    "icon": "talonsoftheemperor.png"
+  "Thousand Sons": {
+    "dataFile": "ThousandSons.json",
+    "icon": "hereticastartes.png"
   },
   "Tyranids": {
     "dataFile": "Tyranids.json",
