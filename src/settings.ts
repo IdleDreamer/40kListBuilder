@@ -1,4 +1,4 @@
-let settings = {
+let Settings = {
   supportedFactions: [
     'Craftworlds',
     'Harlequins',
@@ -6,4 +6,4 @@ let settings = {
   ]
 };
 
-export default settings;
+export default Settings;

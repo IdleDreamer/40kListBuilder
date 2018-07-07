@@ -60,24 +60,19 @@ h2 {
   padding-left: 10px;
 }
 
-#topBar table .unselectedCost {
+#topBar table .costs {
   font-size: 16px;
   text-align: right;
 }
 
-#topBar table .unselectedCost td:hover {
-  color: white;
-  cursor: pointer;
-}
-
-#topBar table .selectedCost {
+#topBar table .points {
   padding-right: 10px;
   font-size: 20px;
   text-align: center;
   vertical-align: bottom;
 }
 
-#topBar table .selectedCost .costValue{
+#topBar table .points .costValue{
   font-size: 30px;
 }
 
