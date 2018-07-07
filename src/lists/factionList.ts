@@ -62,7 +62,7 @@ export default class FactionList {
     if (!supported) {
       listItem.className = "factionNotSupported";
     }
-    listItem.onclick = () => {/* ListBuilder.unitList.factionSelected(faction); */};
+    listItem.onclick = () => {ListBuilder.unitList.factionSelected(faction);};
     listItem.innerHTML = '<img src="Content/40kListBuilder/resources/icons/' + Factions[faction].icon +'"/>' + faction;
     return listItem;
   }
