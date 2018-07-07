@@ -1,0 +1,187 @@
+{
+  "factionSpecialRules": [
+    {
+      "name": "Strength from Death",
+      "description": "This ability is common to all YNNARI INFANTRYand YNNARI BIKER units and the Yncarne. Each time a unit is completely destroyed within 7\" of one or more units with this ability, except in the Morale phase, pick one of those units to make a Soulburst action. That unit can immediately do one of the following, even if it has already done so in this turn: <br/>1. The unit can move as if it were your Movement phase. It can Advance or Fall Back as part of this move. <br/>2. The unit can, if it is a PSYKER, immediately attempt to manifest a single psychic power as if it were the Psychic phase. <br/>3. The unit can shoot as if it were your Shooting phase, even if it Advanced or Fell Back this turn. <br/>4. The unit can charge as if it were the Charge phase, even if it Advanced or Fell Back this turn (enemy units can fire Overwatch as normal). A unit cannot do this if it is within 1\" of an enemy unit. <br/>5. The unit can fight as if it were the Fight phase. <br/>Note that this means that a unit may be able to shoot or fight twice in the same turn. <br/>A unit can only make a Soulburst action once per turn."
+    },
+    {
+      "name": "Ynnead's Will",
+      "description": "Units with this ability can embark onto any AELDARI TRANSPORT, even though the transport in question might normally only permit models with other Faction keywords to do so. All other restrictions apply normally."
+    }
+  ],
+  "spells": {
+    "Revenant": {
+      "1": {
+        "name": "Gaze of Ynnead",
+        "description": "Gaze of Ynnead has a warp charge value of 8. If manifested, select a visible enemy unit within 18\" of the psyker and roll a D6. On a 1, that unit suffers a mortal wound. On a 2-5 that unit suffers D3 mortal wounds. On a 6, that unit suffers D6 mortal wounds."
+      },
+      "2": {
+        "name": "Ancestor's Grace",
+        "description": "Ancestors' Grace has a warp charge value of 5. If manifested, select a friendly YNNARI unit within 18\" of the psyker. Until the start of your next Psychic phase, you can re-roll hit rolls of 1 for that unit."
+      },
+      "3": {
+        "name": "Word of the Phoenix",
+        "description": "Word of the Phoenix has a warp charge value of 6. If manifested, select a friendly YNNARI unit within 18\" of the psyker that has not made a Soulburst action this turn. That unit can immediately make a Soulburst action (see Strength from Death)."
+      }
+    }
+  },
+  "wargear": {
+    "Asu-var, the Sword of Silent Screams": {
+      "Range": "Melee",
+      "Type": "Melee",
+      "S": "+2",
+      "AP": "-3",
+      "D": "D3",
+      "Abilities": "Enemy units that suffer any unsaved wounds from this weapon subtract 1 from their Leadership until the end of the turn.",
+      "Points": 0
+    },
+    "Kha-vir, the Sword of Sorrows": {
+      "Range": "Melee",
+      "Type": "Melee",
+      "S": "+1",
+      "AP": "-2",
+      "D": "D3",
+      "Abilities": "-",
+      "Points": 0
+    },
+    "Vilith-zhar, the Sword of Souls": {
+      "Range": "Melee",
+      "Type": "Melee",
+      "S": "User",
+      "AP": "-4",
+      "D": "D6",
+      "Abilities": "You can re-roll failed wound rolls for this weapon.",
+      "Points": 0
+    }
+  },
+  "models": {
+    "Yvraine": {
+      "Points": 132,
+      "PointsIncludesWargear": false,
+      "M": 8,
+      "WS": "2+",
+      "BS": "2+",
+      "S": 3,
+      "T": 3,
+      "W": 5,
+      "A": 4,
+      "Ld": 9,
+      "Sv": "6+",
+      "Wargear": {
+        "weapons": [
+          ["Kha-vir, the Sword of Sorrows"]
+        ]
+      },
+      "Abilities": {
+        "faction": ["Strength from Death", "Ynnead's Will"],
+        "Runesuit": "Yvraine has a 4+ invulnerable save.",
+        "Gyrinx Familiar": "You can add 1 to all of Yvraine's Psychic tests and Deny the Witch tests.",
+        "Herald of Ynnead": "Each time another AELDARI model is slain within 7\" of Yvraine, roll a D6. On a 4+, Yvraine immediately regains a lost wound. If the model was a PSYKER, you can immediately generate another psychic power for Yvraine from the Revenant discipline."
+      },
+      "Psyker": "Yvraine can attempt to manifest two psychic powers in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. She knows the Smite power and two psychic powers from the Revenant discipline (pg 76).",
+      "Faction Keywords": ["Aeldari", "Ynnari"],
+      "Keywords": ["Character", "Infantry", "Psyker", "Yvraine"]
+    },
+    "The Visarch": {
+      "Points": 141,
+      "PointsIncludesWargear": false,
+      "M": 8,
+      "WS": "2+",
+      "BS": "2+",
+      "S": 3,
+      "T": 3,
+      "W": 5,
+      "A": 5,
+      "Ld": 9,
+      "Sv": "3+",
+      "Wargear": {
+        "weapons": [
+          ["Asu-var, the Sword of Silent Screams"]
+        ]
+      },
+      "Abilities": {
+        "faction": ["Strength from Death", "Ynnead's Will"],
+        "Champion of Ynnead": "Each time another AELDARI model is slain within 7\" of the Visarch, roll a D6. On a 4+, the Visarch immediately regains a lost wound. If that model was a CHARACTER, add 1 to the Visarch's Attacks characteristic for the rest of the battle (to a maximum Attacks characteristic of 7).",
+        "Warden of Yvraine": "If Yvraine suffers a wound or mortal wound while the Visarch is within 3\", you can choose for the Visarch to shield Yvraine. If you do, roll a D6. On a 2+ Yvraine does not suffer the wound, but the Visarch suffers a mortal wound."
+      },
+      "Faction Keywords": ["Aeldari", "Ynnari"],
+      "Keywords": ["Character", "Infantry", "The Visarch"]
+    },
+    "The Yncarne": {
+      "Points": 337,
+      "PointsIncludesWargear": false,
+      "M": 8,
+      "WS": "2+",
+      "BS": "2+",
+      "S": 6,
+      "T": 6,
+      "W": 9,
+      "A": 6,
+      "Ld": 9,
+      "Sv": "3+",
+      "Wargear": {
+        "weapons": [
+          ["Vilith-zhar, the Sword of Souls"]
+        ]
+      },
+      "Abilities": {
+        "faction": ["Strength from Death"],
+        "Daemonic Avatar": "The Yncarne has a 4+ invulnerable save.",
+        "Inevitable Death": "When you set up the Yncarne, it must be set up in waiting rather than on the battlefield. When a unit (friend or foe) is completely destroyed, you may immediately set up the Yncarne as close as possible to the position of that unit, more than 1\" from all enemy models. Each time a unit (friend or foe) is completely destroyed, you may immediately remove the Yncarne from the battlefield and set it up again as close as possible to the position of that unit, more than 1\" from all enemy models. The Yncarne may not charge in the turn it is set up in this manner.",
+        "Ynnead Stirs": "Friendly YNNARI units within 6\" of the Yncarne automatically pass Morale tests. In addition, whenever a friendly YNNARI unit within 6\" of the Yncarne suffers an unsaved wound or mortal wound, roll a D6. On a 6 that wound is ignored.",
+        "Avatar of Ynnead": "Each time another AELDARI model is slain within 7\" of the Yncarne, roll a D6. On a 4+, the Yncarne regains a wound lost earlier in the battle."
+      },
+      "Psyker": "The Yncarne can attempt to manifest two psychic powers in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows the Smite power and two psychic powers from the Revenant discipline (pg 76).",
+      "Faction Keywords": ["Aeldari", "Ynnari"],
+      "Keywords": ["Character", "Monster", "Daemon", "Fly", "Psyker", "The Yncarne"]
+    }
+  },
+  "units": {
+    "HQ": {
+      "The Visarch": {
+        "modelTypes": [
+          {
+            "model": "The Visarch",
+            "defaultAmount": 1,
+            "maxAmount": 1
+          }
+        ],
+        "power": [
+          [1, 7]
+        ]
+      },
+      "The Yncarne": {
+        "modelTypes": [
+          {
+            "model": "The Yncarne",
+            "defaultAmount": 1,
+            "maxAmount": 1
+          }
+        ],
+        "power": [
+          [1, 17]
+        ]
+      },
+      "Yvraine": {
+        "modelTypes": [
+          {
+            "model": "Yvraine",
+            "defaultAmount": 1,
+            "maxAmount": 1
+          }
+        ],
+        "power": [
+          [1, 7]
+        ]
+      }
+    },
+    "Troops": {},
+    "Elites": {},
+    "Fast Attack": {},
+    "Heavy Support": {},
+    "Dedicated Transport": {},
+    "Flyer": {},
+    "Fortification": {},
+    "Lord Of War": {}
+  }
+}

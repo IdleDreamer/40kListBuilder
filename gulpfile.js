@@ -37,7 +37,7 @@ gulp.task("build", function() {
   
     var libraryName = "listbuilder";
     var mainTsFilePath = "src/init.ts";
-    var outputFolder   = "Content/js/";
+    var outputFolder   = "Content/40kListBuilder/js/";
     var outputFileName = libraryName + ".min.js";
 
     var bundler = browserify({
