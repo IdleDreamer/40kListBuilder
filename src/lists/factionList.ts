@@ -43,7 +43,7 @@ export default class FactionList {
   }
 
   public setupFactionList() {
-    this.menuBtn.onclick = () => {this.toggleNav();};
+    this.menuBtn.onclick = () => { this.toggleNav(); };
     if (!this.isOpen()) {
       this.openNav();
     }
@@ -65,8 +65,8 @@ export default class FactionList {
     if (!supported) {
       listItem.className = "factionNotSupported";
     }
-    listItem.onclick = () => {this.factionSelected(faction);};
-    listItem.innerHTML = '<img src="Content/40kListBuilder/resources/icons/' + Factions[faction].icon +'"/>' + faction;
+    listItem.onclick = () => { this.factionSelected(faction); };
+    listItem.innerHTML = '<img src="Content/40kListBuilder/resources/icons/' + Factions[faction].icon + '"/>' + faction;
     return listItem;
   }
 

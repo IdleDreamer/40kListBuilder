@@ -25,7 +25,7 @@ export default class Data {
         let json = Factions[faction].dataFile;
         let request = new XMLHttpRequest();
         request.onload = () => {
-          this.onFileLoaded(json, JSON.parse(request.response));
+          this.onFileLoaded(faction, JSON.parse(request.response));
         };
         request.onerror = () => {
           this.onFileFailed();
