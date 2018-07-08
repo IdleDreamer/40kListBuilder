@@ -18,8 +18,15 @@ export default class Costs {
     this.updateCosts();
   }
 
+  public updateCostsExt(costs: Array<number>) {
+    this.costs[0] = costs[0];
+    this.costs[1] = costs[1];
+    this.costs[2] = costs[2];
+    this.costs[3] = costs[3];
+    this.updateCosts();
+  }
+
   private updateCosts() {
-    
     this.pointsElement.innerHTML = '<div class="costValue">' + this.costs[0] + '</div>' + 'POINTS';
     this.powerElement.innerHTML = '<div class="displayedCostSmall">Power: ' + this.costs[1] + '</div>';
     this.woundsElement.innerHTML = '<div class="displayedCostSmall">Wounds: ' + this.costs[2] + '</div>';

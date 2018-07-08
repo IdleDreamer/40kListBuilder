@@ -32,7 +32,6 @@
     "no-switch-case-fall-through": true,
     "no-unused-expression": true,
     "no-var-keyword": true,
-    "object-literal-sort-keys": true,
     "one-line": [true,
       "check-open-brace",
       "check-catch",

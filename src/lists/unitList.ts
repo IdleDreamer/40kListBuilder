@@ -42,11 +42,9 @@ export default class UnitList {
         typeList.innerHTML = unit.type + '<hr/>';
         currentType = unit.type;
       }    
-      let unitId = unit.faction + "-" + unit.type + "-" + unit.name;
       listItem = document.createElement('li');
-      listItem.id = unitId;
       listItem.onclick = () => {
-        ListBuilder.armyList.addUnit(unitId, unit.faction, unit.type, unit.name);
+        ListBuilder.armyList.addUnit(unit.faction, unit.type, unit.name);
       };
       listItem.innerHTML = unit.name
         + '<br/><div id="unitDetails"><table><tr><td>Points: ' 

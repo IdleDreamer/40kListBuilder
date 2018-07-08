@@ -1,5 +1,9 @@
 export default class Editor {
 
+  public editUnit(id: number) {
+    // TODO
+  }
+
   // TODO - a lot of this can now be done via the unit class
 
   /* constructor() {
