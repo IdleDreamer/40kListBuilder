@@ -1,5 +1,3 @@
-import ListBuilder from "../init";
-
 export default class AvailableUnit {
 
   public faction: string;
@@ -15,7 +13,7 @@ export default class AvailableUnit {
     this.faction = faction;
     this.type = type;
     this.name = unit;
-    this.unitInfo = ListBuilder.data.data[faction].units[type][unit];
+    this.unitInfo = window.list.data.data[faction].units[type][unit];
     this.points = this.getPointsValue();
     this.power = this.getPowerValue();
     this.wounds = this.getWoundsValue();
@@ -26,12 +24,12 @@ export default class AvailableUnit {
     let points = 0;
     for (let modelType of this.unitInfo.modelTypes) {
       let modelPoints = 0;
-      let model = ListBuilder.data.data[this.faction].models[modelType.model];
+      let model = window.list.data.data[this.faction].models[modelType.model];
       modelPoints += model.Points;  
       if (!model.PointsIncludesWargear) {
         if(model.Wargear.weapons) {
           for (let weapon = 0; weapon < model.Wargear.weapons[0].length; weapon++) {
-            modelPoints += ListBuilder.data.data[this.faction].wargear[model.Wargear.weapons[0][weapon]].Points;
+            modelPoints += window.list.data.data[this.faction].wargear[model.Wargear.weapons[0][weapon]].Points;
           }
         }
       }
@@ -49,7 +47,7 @@ export default class AvailableUnit {
   public getWoundsValue() {
     let wounds = 0;
     for (let modelType of this.unitInfo.modelTypes) {
-      let model = ListBuilder.data.data[this.faction].models[modelType.model];
+      let model = window.list.data.data[this.faction].models[modelType.model];
       wounds += (model.W * modelType.defaultAmount); 
     }
     return wounds;

@@ -7,27 +7,32 @@ import Editor from '../src/editor/editor';
 
 export default class ListBuilder {
 
-  public static data: Data;
-  public static costs: Costs;
-  public static factionList: FactionList;
-  public static unitList: UnitList;
-  public static armyList: ArmyList;
-  public static editor: Editor;
+  public data: Data;
+  public costs: Costs;
+  public factionList: FactionList;
+  public unitList: UnitList;
+  public armyList: ArmyList;
+  public editor: Editor;
 
   constructor() {
-    ListBuilder.data = new Data(this.setup, this.loadingFailure);
+    this.data = new Data(this.setup, this.loadingFailure);
+    this.costs = new Costs();
+    this.factionList = new FactionList();
+    this.unitList = new UnitList();
+    this.armyList = new ArmyList();
+    this.editor = new Editor();
   }
 
   public loadFactionData() {
-    ListBuilder.data.loadFactionData();
+    this.data.loadFactionData();
   }
 
   public setup() {
-    ListBuilder.costs = new Costs();
-    ListBuilder.factionList = new FactionList();
-    ListBuilder.unitList = new UnitList();
-    ListBuilder.armyList = new ArmyList();
-    ListBuilder.editor = new Editor();
+    this.costs = new Costs();
+    this.factionList = new FactionList();
+    this.unitList = new UnitList();
+    this.armyList = new ArmyList();
+    this.editor = new Editor();
   }
 
   public loadingFailure() {
@@ -38,13 +43,20 @@ export default class ListBuilder {
 let list = new ListBuilder();
 list.loadFactionData();
 
+declare global {
+  interface Window {
+    list: ListBuilder;
+  }
+}
+window.list = list;
+
 /**
  * X 1. Load all the supported faction files
  * X 2. Create the cost header 
  * X 3. Create the faction list
- * 4. Create the army list
+ * X 4. Create the army list
  * X 5.   Create the available unit list
- * 6.   Populate the army list
+ * X 6.   Populate the army list
  * 7.   Create the editor
  * 
  * TODOs: 

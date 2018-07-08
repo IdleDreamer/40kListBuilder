@@ -1,6 +1,5 @@
 import Factions from '../data/factions';
 import Settings from '../settings';
-import ListBuilder from '../init';
 
 export default class FactionList {
 
@@ -71,7 +70,7 @@ export default class FactionList {
   }
 
   private factionSelected(faction: string) {
-    ListBuilder.unitList.factionSelected(faction);
+    window.list.unitList.factionSelected(faction);
     if (this.isOpen()) {
       this.closeNav();
     }

@@ -1,9 +1,4 @@
-import ListBuilder from "../init";
 import Model from '../objects/model';
-
-// TODO:
-//  - Weapons are not showing
-//  - Delet and Edit only work on the lowest type category ???dafuq???
 
 export default class Unit {
 
@@ -31,7 +26,7 @@ export default class Unit {
     this.totalPower = 0;
     this.totalWounds = 0;
 
-    this.unitInfo = ListBuilder.data.data[faction].units[type][name];
+    this.unitInfo = window.list.data.data[faction].units[type][name];
     this.models = {};
 
     this.setupDefaultModels();
@@ -93,7 +88,7 @@ export default class Unit {
     return HTML;
   }
 
-  public getUnProfiledStats(stat) {
+  public getUnProfiledStats(stat: any) {
     if (typeof stat === "string" || typeof stat === "number") {
       return stat;
     }
@@ -139,7 +134,7 @@ export default class Unit {
     }
     for (let weaponIndex in listOfWeapons) {
       let weapon = listOfWeapons[weaponIndex];
-      let weaponInfo = ListBuilder.data.data[this.faction].wargear[weapon];
+      let weaponInfo = window.list.data.data[this.faction].wargear[weapon];
       let numberOf = '';
       if (amountsPerWeapon[weaponIndex] > 1) {
         numberOf = ' (' + amountsPerWeapon[weaponIndex] +')';
@@ -222,9 +217,9 @@ export default class Unit {
     return abilityHTML;
   }
 
-  public getFactionAbility(id) {
-    return '<b>' + ListBuilder.data.data[this.faction].factionSpecialRules[id].name + '</b>: '
-    + ListBuilder.data.data[this.faction].factionSpecialRules[id].description + '<br/>';
+  public getFactionAbility(id: number | string) {
+    return '<b>' + window.list.data.data[this.faction].factionSpecialRules[id].name + '</b>: '
+    + window.list.data.data[this.faction].factionSpecialRules[id].description + '<br/>';
   }
 
   public getPsykerHTML(): string {
@@ -293,9 +288,7 @@ export default class Unit {
   private calculateModels() {
     let models = 0;
     for (let modelType in this.models) {
-      for (let modelIndex in this.models[modelType]) {
-        models++;
-      }
+      models += this.models[modelType].length;
     }
     this.totalModels = models;
   }
@@ -320,7 +313,7 @@ export default class Unit {
           if(model.modelInfo.Wargear.weapons) {
             let selectedWeapons = model.modelInfo.Wargear.weapons[model.selectedWeaponConfig];
             for (let weapon = 0; weapon < selectedWeapons.length; weapon++) {
-              points += ListBuilder.data.data[this.faction].wargear[selectedWeapons[weapon]].Points;
+              points += window.list.data.data[this.faction].wargear[selectedWeapons[weapon]].Points;
             }
           }
         }
@@ -344,7 +337,7 @@ export default class Unit {
     for (let modelType in this.unitInfo.modelTypes) {
       let model = this.unitInfo.modelTypes[modelType].model;
       this.models[model] = [];
-      let modelInfo = ListBuilder.data.data[this.faction].models[model];
+      let modelInfo = window.list.data.data[this.faction].models[model];
       if (modelInfo !== undefined) {
         for (let num = 0; num < this.unitInfo.modelTypes[modelType].defaultAmount; num++) {
           let newModel = new Model(model, modelInfo);
@@ -395,212 +388,5 @@ export default class Unit {
         model.selectedAllegiance = index;
       }
     }
-  }
-
-  getStatsHTML() {
-    let HTML = '';
-    for (var modelType in this.models) {
-      if (this.models[modelType].length > 0) {
-        var model = this.models[modelType][0];
-        var modelNumStr = '';
-        if (this.models[modelType].length > 1) {
-          modelNumStr = ' (' + this.models[modelType].length +')';
-        }
-        HTML += '<tr>'
-          + '<td class="stat" id="name">' + model.name + modelNumStr + '</td>'
-          + '<td class="stat" id="m">' + this.getUnProfiledStats(model.modelInfo.M) + '</td>'
-          + '<td class="stat" id="ws">' + this.getUnProfiledStats(model.modelInfo.WS) + '</td>'
-          + '<td class="stat" id="bs">' + this.getUnProfiledStats(model.modelInfo.BS) + '</td>'
-          + '<td class="stat" id="s">' + this.getUnProfiledStats(model.modelInfo.S) + '</td>'
-          + '<td class="stat" id="t">' + this.getUnProfiledStats(model.modelInfo.T) + '</td>'
-          + '<td class="stat" id="w">' + this.getUnProfiledStats(model.modelInfo.W) + '</td>'
-          + '<td class="stat" id="a">' + this.getUnProfiledStats(model.modelInfo.A) +'</td>'
-          + '<td class="stat" id="ld">' + this.getUnProfiledStats(model.modelInfo.Ld) + '</td>'
-          + '<td class="stat" id="sv">' + this.getUnProfiledStats(model.modelInfo.Sv) + '</td>'
-          + '</tr>';
-      }
-    }
-    return HTML;
-  }
-
-  getUnProfiledStats(stat) {
-    if (typeof stat === "string" || typeof stat === "number") {
-      return stat;
-    }
-    else {
-      var stats = '';
-      for (var i = 0; i < stat.length; i++) {
-        stats += '<b>' + stat[i].value + '</b> (' + stat[i].Wounds[0] + '-' + stat[i].Wounds[1] + ')<br/>';
-      }
-      return stats;
-    }
-  }
-
-  getWeaponsHeadersHTML() {
-    let HTML = '<tr>'
-        + '<th class="leftHeader">Weapon</th>'
-        + '<th>Range</th>'
-        + '<th>Type</th>'
-        + '<th>S</th>'
-        + '<th>AP</th>'
-        + '<th>D</th>'
-        + '<th colspan="4">Abilities</th>'
-        + '</tr>';
-
-    return HTML;
-  }
-
-  getWeaponsHTML() {
-    var listOfWeapons = [];
-    let HTML = '';
-    for (var modelType in this.models) {
-      for (var i = 0; i < this.models[modelType].length; i++) {
-        var weapons = this.models[modelType][i].modelInfo.Wargear.weapons[this.models[modelType][i].selectedWeaponConfig];
-        for (var weapon of weapons) {
-          if (listOfWeapons.indexOf(weapon) === -1) {
-            listOfWeapons.push(weapon);
-          }
-        }
-      }
-    }
-    for (var weapon of listOfWeapons) {
-      var weaponInfo = factionList[this.faction].wargear[weapon];
-      if (weaponInfo !== undefined) {
-        if (weaponInfo.WargearAbility !== undefined) {
-          HTML += '<tr>'
-          + '<td class="stat" id="name">' + weapon + '</td>'
-          + '<td class="stat" id="abilities" colspan="9">' + weaponInfo.WargearAbility + '</td>'
-          + '</tr>';
-        }
-        else if (weaponInfo.profiles === undefined) {
-          HTML += '<tr>'
-          + '<td class="stat" id="name">' + weapon + '</td>'
-          + '<td class="stat" id="range">' + weaponInfo.Range + '</td>'
-          + '<td class="stat" id="type">' + weaponInfo.Type + '</td>'
-          + '<td class="stat" id="s">' + weaponInfo.S + '</td>'
-          + '<td class="stat" id="ap">' + weaponInfo.AP + '</td>'
-          + '<td class="stat" id="d">' + weaponInfo.D + '</td>'
-          + '<td class="stat" id="abilities" colspan="4">' + weaponInfo.Abilities + '</td>'
-          + '</tr>';
-        }
-        else {
-          let desription = weaponInfo.description === undefined ? '' : weaponInfo.description;
-          HTML += '<tr class="profiledWeapon">'
-          + '<td class="stat" id="name">' + weapon + '</td>'
-          + '<td class="stat" id="description" colspan="9">' + desription + '</td>'
-          + '</tr>';
-          for (var profile in weaponInfo.profiles) {
-            var profileInfo = weaponInfo.profiles[profile];
-            if (profileInfo !== undefined) {
-              HTML += '<tr class="profile">'
-              + '<td class="stat" id="name"> - ' + profile + '</td>'
-              + '<td class="stat" id="range">' + profileInfo.Range + '</td>'
-              + '<td class="stat" id="type">' + profileInfo.Type + '</td>'
-              + '<td class="stat" id="s">' + profileInfo.S + '</td>'
-              + '<td class="stat" id="ap">' + profileInfo.AP + '</td>'
-              + '<td class="stat" id="d">' + profileInfo.D + '</td>'
-              + '<td class="stat" id="abilities" colspan="4">' + profileInfo.Abilities + '</td>'
-              + '</tr>';
-            }
-          }
-        }
-      }
-    }
-    return HTML;
-  }
-
-  getAbilitiesHTML() {
-    var abilityHTML = '<tr class="abilities"><th>Abilities</th><td colspan="9">';
-    var abilityList = [];
-    for (var modelType in this.models) {
-      for (var i = 0; i < this.models[modelType].length; i++) {
-        var abilities = this.models[modelType][i].modelInfo.Abilities;
-        for (var ability in abilities) {
-          if (typeof abilities[ability] !== "string") {
-            for (var factionAbility in abilities[ability]) {
-              let htmlString = this.getFactionAbility(factionAbility);
-              if (abilityList.indexOf(htmlString) === -1) {
-                abilityList.push(htmlString);
-              }
-            }
-          }
-          else {
-            let htmlString = '<b>' + ability + ':</b> ' + this.models[modelType][i].modelInfo.Abilities[ability] + '<br/>';
-            if (abilityList.indexOf(htmlString) === -1) {
-              abilityList.push(htmlString);
-            }
-          }
-        }
-      }
-    }
-    for (let i = 0; i < abilityList.length; i++) {
-      abilityHTML += abilityList[i];
-      if (i < abilityList.length - 1) {
-        abilityHTML += '<br/>';
-      }
-    }
-    abilityHTML += '</td></tr>';
-    return abilityHTML;
-  }
-
-  getFactionAbility(id) {
-    return '<b>' + factionList[this.faction].factionSpecialRules[id].name + '</b>: '
-    + factionList[this.faction].factionSpecialRules[id].description + '<br/>';
-  }
-
-  getPsykerHTML() {
-    let psykerHTML = '';
-    for (var modelType in this.models) {
-      if (this.models[modelType].length > 0 && this.models[modelType][0].modelInfo.Psyker !== undefined) {
-        psykerHTML += '<tr class="psykerAbilities"><th>Psyker</th>'
-          + '<td colspan="9">' + this.models[modelType][0].modelInfo.Psyker
-          + '</td></tr>';
-      }
-    }
-    return psykerHTML;
-  }
-
-  getAllegianceHTML() {
-    let allegianceHTML = '';
-    for (var modelType in this.models) {
-      if (this.models[modelType].length > 0) {
-        if (this.models[modelType][0].modelInfo.Allegiance !== undefined) {
-          allegianceHTML += '<tr class="allegiance"><th>Allegiance</th><td colspan="9">' + this.models[modelType][0].modelInfo.Allegiance[this.models[modelType][0].selectedAllegiance] + '</td></tr>';
-          return allegianceHTML;
-        }
-      }
-    }
-    return '';
-  }
-
-  getKeywordsHTML() {
-    let keywords = [];
-    for (var modelType in this.models) {
-      if (this.models[modelType].length > 0) {
-        for (var i = 0; i < this.models[modelType][0].modelInfo["Faction Keywords"].length; i++) {
-          var keyword = this.models[modelType][0].modelInfo["Faction Keywords"][i].toUpperCase();
-          if (keywords.indexOf(keyword) === -1) {
-            keywords.push(keyword);
-          }
-        }
-        for (var i = 0; i < this.models[modelType][0].modelInfo["Keywords"].length; i++) {
-          var keyword = this.models[modelType][0].modelInfo["Keywords"][i].toUpperCase();
-          if (keywords.indexOf(keyword) === -1) {
-            keywords.push(keyword);
-          }
-        }
-      }
-    }
-    var keywordHTML = '<tr class="keywords"><th>Keywords</th><td colspan="9">';
-    for (var keyword of keywords) {
-      if (keywords.indexOf(keyword) < keywords.length - 1) {
-        keywordHTML += keyword + ', ';
-      }
-      else {
-        keywordHTML += keyword;
-      }
-    }
-    keywordHTML += '</td></tr>';
-    return keywordHTML;
-  } */
+  }*/
 }

@@ -1,4 +1,3 @@
-import ListBuilder from '../init';
 import Unit from '../objects/unit';
 
 export default class ArmyList {
@@ -46,8 +45,8 @@ export default class ArmyList {
     // TODO
   }
 
-  public addFactionSpells(id: string, faction: string, spells: string) {
-    // TODO - is id still needed
+  public addFactionSpells(faction: string, spells: string) {
+    // TODO
   }
 
   public updateCosts() {
@@ -65,41 +64,7 @@ export default class ArmyList {
         }
       }
     } 
-    ListBuilder.costs.updateCostsExt([points, power, wounds, models]);
-  }
-
-  public renderListOld() {
-    let listContainer = (document.getElementById("newListContents") as HTMLElement);
-    listContainer.innerHTML = '';
-    let newUnitHTML = '';
-    for (let type in this.listContents) {
-      if (this.listContents[type].length > 0) {
-        let imageName = this.getImageName(type);
-        newUnitHTML += '<div id="typeHeader"><img src="Content/40kListBuilder/resources/icons/' + imageName + '"/><h1>' + type + '</h1></div>';
-      }
-      for (let unit = 0; unit < this.listContents[type].length; unit++) {
-        if (this.listContents[type][unit] !== null) {
-          let unitInfo = this.listContents[type][unit];
-          newUnitHTML += '<table class="unitTable" id="' + unitInfo.id + '">';
-          newUnitHTML += unitInfo.getUnitNameAndCostHTML();
-          newUnitHTML += unitInfo.getStatsHeadersHTML();
-          newUnitHTML += unitInfo.getStatsHTML();
-          newUnitHTML += unitInfo.getWeaponsHeadersHTML();
-          newUnitHTML += unitInfo.getWeaponsHTML();
-          newUnitHTML += unitInfo.getAbilitiesHTML();
-          newUnitHTML += unitInfo.getPsykerHTML();
-          newUnitHTML += unitInfo.getAllegianceHTML();
-          newUnitHTML += unitInfo.getKeywordsHTML();
-          newUnitHTML += '</table>';
-          newUnitHTML += '<ul class="unitControls">'
-            +'<li class="button"><img onclick="list.removeFromList(' + unitInfo.id + ')" src="Content/40kListBuilder/resources/icons/delete.png"/></li>'
-            +'<li class="button"><img onclick="list.editUnit(' + unitInfo.id + ')" src="Content/40kListBuilder/resources/icons/edit.png"/></li>'
-            +'</ul><div class="clear"></div>';
-        }
-      }
-    }
-    listContainer.innerHTML += newUnitHTML;
-    listContainer.innerHTML += '<div class="spacer"></div>';
+    window.list.costs.updateCostsExt([points, power, wounds, models]);
   }
 
   public renderList() {
@@ -126,7 +91,6 @@ export default class ArmyList {
           unitTable.innerHTML += unitInfo.getAllegianceHTML();
           unitTable.innerHTML += unitInfo.getKeywordsHTML();
           listContainer.appendChild(unitTable);
-          // TODO - these controls don't work ?? dafuq ??
           listContainer.appendChild(this.getUnitControls(unitInfo.id));
           listContainer.innerHTML += '<div class="clear"</div>';
         }
@@ -178,18 +142,15 @@ export default class ArmyList {
     let deleteBtn = document.createElement('li');
     deleteBtn.className = "button";
     deleteBtn.id = 'delete' + id;
-    deleteBtn.innerHTML = '<img src="/Content/40kListBuilder/resources/icons/delete.png"/>';
-    deleteBtn.onclick = function() { alert(); };
+    deleteBtn.innerHTML = '<img onclick="list.armyList.removeUnit(' + id + ')" src="/Content/40kListBuilder/resources/icons/delete.png"/>';
     controlList.appendChild(deleteBtn);
 
     let editBtn = document.createElement('li');
     editBtn.className = "button";
     editBtn.id = 'edit' + id;
-    editBtn.innerHTML = '<img src="/Content/40kListBuilder/resources/icons/edit.png"/>';
-    editBtn.onclick = function() { alert(); };
+    editBtn.innerHTML = '<img onclick="list.editor.editUnit(' + id + ')" src="/Content/40kListBuilder/resources/icons/edit.png"/>';
     controlList.appendChild(editBtn);
 
     return controlList;
   }
-
 }

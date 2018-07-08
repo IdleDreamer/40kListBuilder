@@ -1,5 +1,4 @@
 import AvailableUnit from "../objects/availableUnit";
-import ListBuilder from "../init";
 
 export default class UnitList {
 
@@ -14,7 +13,7 @@ export default class UnitList {
   public factionSelected(faction: string) {
     this.availableList = [];
     this.currentFaction = faction;
-    let factionData = ListBuilder.data.data[faction];
+    let factionData = window.list.data.data[faction];
     for (let type in factionData.units) {
       let units = factionData.units[type];
       for (let unit in units) {
@@ -44,7 +43,7 @@ export default class UnitList {
       }    
       listItem = document.createElement('li');
       listItem.onclick = () => {
-        ListBuilder.armyList.addUnit(unit.faction, unit.type, unit.name);
+        window.list.armyList.addUnit(unit.faction, unit.type, unit.name);
       };
       listItem.innerHTML = unit.name
         + '<br/><div id="unitDetails"><table><tr><td>Points: ' 
@@ -60,24 +59,24 @@ export default class UnitList {
     }
     containingList.appendChild(typeList);
     
-    if (ListBuilder.data.data[this.currentFaction].spells !== undefined) {
+    if (window.list.data.data[this.currentFaction].spells !== undefined) {
       let spellsList = document.createElement('ul');
       spellsList.innerHTML = 'Spells<hr/>';
 
       let smite = document.createElement('li');
       smite.id = "smite";
       smite.onclick = () => {
-        ListBuilder.armyList.addSmiteSpell();
+        window.list.armyList.addSmiteSpell();
       };
       smite.innerHTML = "Smite";
       spellsList.appendChild(smite);
 
-      for (let spellType in ListBuilder.data.data[this.currentFaction].spells) {
+      for (let spellType in window.list.data.data[this.currentFaction].spells) {
         let id = this.currentFaction + '-' + spellType;
         let spellItem = document.createElement('li');
         spellItem.id = id;
         spellItem.onclick = () => {
-          ListBuilder.armyList.addFactionSpells(id, this.currentFaction, spellType);
+          window.list.armyList.addFactionSpells(this.currentFaction, spellType);
         };
         spellItem.innerHTML = spellType;
         spellsList.appendChild(spellItem);
