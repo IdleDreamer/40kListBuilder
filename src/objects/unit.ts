@@ -285,6 +285,48 @@ export default class Unit {
     this.calculatePower();
   }
 
+  public addModel(modelType) {
+    let model = this.unitInfo.modelTypes[modelType].model;
+    let modelInfo = window.list.data.data[this.faction].models[model];
+    if (modelInfo !== undefined) {
+      let newModel = new Model(model, modelInfo);
+      this.models[model].push(newModel);
+    }
+    this.updateCosts();
+    window.list.armyList.updateCosts();
+    window.list.editor.renderEdit();
+  }
+
+  public removeModel(modelType) {
+    let model = this.unitInfo.modelTypes[modelType].model;
+    if (this.models[model].length > 1) {
+      this.models[model].pop();
+    }
+    else {
+      this.models[model] = [];
+    }
+    this.updateCosts();
+    window.list.armyList.updateCosts();
+    window.list.editor.renderEdit();
+  }
+
+  public updateModelWargear(modelType, modelIndex, selectedWeaponConfig) {
+    let model = this.unitInfo.modelTypes[modelType].model;
+    this.models[model][modelIndex].selectedWeaponConfig = selectedWeaponConfig;
+    this.updateCosts();
+    window.list.armyList.updateCosts();
+    window.list.editor.renderEdit();
+  }
+
+  public updateAllegiance(index: number) {
+    for (let modelType in this.models) {
+      for (let modelIndex in this.models[modelType]) {
+        let model = this.models[modelType][modelIndex];
+        model.selectedAllegiance = index;
+      }
+    }
+  }
+
   private calculateModels() {
     let models = 0;
     for (let modelType in this.models) {
@@ -346,47 +388,4 @@ export default class Unit {
       }
     }
   }
-
-  /* 
-  addModel(modelType) {
-    let model = this.unitInfo.modelTypes[modelType].model;
-    let modelInfo = factionList[this.faction].models[model];
-    if (modelInfo !== undefined) {
-      let newModel = new Model(model, modelInfo);
-      this.models[model].push(newModel);
-    }
-    this.updateCosts();
-    list.updateCosts();
-    editor.renderEdit();
-  }
-
-  removeModel(modelType) {
-    let model = this.unitInfo.modelTypes[modelType].model;
-    if (this.models[model].length > 1) {
-      this.models[model].pop();
-    }
-    else {
-      this.models[model] = [];
-    }
-    this.updateCosts();
-    list.updateCosts();
-    editor.renderEdit();
-  }
-
-  updateModelWargear(modelType, modelIndex, selectedWeaponConfig) {
-    let model = this.unitInfo.modelTypes[modelType].model;
-    this.models[model][modelIndex].selectedWeaponConfig = selectedWeaponConfig;
-    this.updateCosts();
-    list.updateCosts();
-    editor.renderEdit();
-  }
-
-  updateAllegiance(index) {
-    for (let modelType in this.models) {
-      for (let modelIndex in this.models[modelType]) {
-        let model = this.models[modelType][modelIndex];
-        model.selectedAllegiance = index;
-      }
-    }
-  }*/
 }

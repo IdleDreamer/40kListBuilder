@@ -1,21 +1,20 @@
 export default class Editor {
 
+  private editorContainerHTML: HTMLElement;
+  private editorHTML: HTMLElement;
+  private unit: any;
+  
+  public constructor() {
+    this.editorContainerHTML = (document.getElementById("editor") as HTMLElement);
+    this.editorHTML = (document.getElementById("editorForm") as HTMLElement);
+    this.editorContainerHTML.style.width = '0px';
+    this.unit = {};
+  }
+
   public editUnit(id: number) {
-    // TODO
-  }
-
-  // TODO - a lot of this can now be done via the unit class
-
-  /* constructor() {
-    this.editorContainerHtml = document.getElementById("editor");
-    this.editorHtml = document.getElementById("editorForm");
-    this.editorContainerHtml.style.width = '0px';
-    this.active = false;
-  }
-
-  editUnit(id) {
-    for (var type in listContents) {
-      for (var unit in listContents[type]) {
+    let listContents = window.list.armyList.listContents;
+    for (let type in listContents) {
+      for (let unit in listContents[type]) {
         if (listContents[type][unit].id === id) {
           this.unit = listContents[type][unit];
           this.renderEdit();
@@ -25,10 +24,32 @@ export default class Editor {
     }
   }
 
-  renderEdit() {
-    this.active = true;
-    this.editorContainerHtml.style.width = '100%';
-    var editFields = this.editorHtml.innerHTML;
+  public addModel(id) {
+    this.unit.addModel(id);
+  }
+
+  public removeModel(id) {
+    this.unit.removeModel(id);
+  }
+
+  public editLoadout(argStr) {
+    let args = argStr.split('-');
+    this.unit.updateModelWargear(args[0], args[1], args[2]);
+  }
+
+  public editAllegiance(index) {
+    this.unit.updateAllegiance(index);
+  }
+
+  public closeEdit() {
+    this.editorContainerHTML.style.width = '0px';
+    window.list.armyList.updateCosts();
+    window.list.armyList.renderList();
+  } 
+
+  public renderEdit() {
+    this.editorContainerHTML.style.width = '100%';
+    let editFields = this.editorHTML.innerHTML;
     editFields = '';
 
     editFields += '<table class="editTable">';
@@ -37,16 +58,16 @@ export default class Editor {
     let globalMax = this.unit.unitInfo.modelTypes[0].maxAmount;
     let globalMin = this.unit.unitInfo.modelTypes[0].defaultAmount;
     let totalModels = 0;
-    for (var i = 0; i < this.unit.unitInfo.modelTypes.length; i++) {
+    for (let i = 0; i < this.unit.unitInfo.modelTypes.length; i++) {
       totalModels += this.unit.models[this.unit.unitInfo.modelTypes[i].model].length;
     }
 
-    for (var i = 0; i < this.unit.unitInfo.modelTypes.length; i++) {
+    for (let i = 0; i < this.unit.unitInfo.modelTypes.length; i++) {
       editFields += this.getModelTypeHTML(this.unit.unitInfo.modelTypes[i].model);
-      var models = this.unit.models[this.unit.unitInfo.modelTypes[i].model];
-      var max = this.unit.unitInfo.modelTypes[i].maxAmount;
+      let models = this.unit.models[this.unit.unitInfo.modelTypes[i].model];
+      let max = this.unit.unitInfo.modelTypes[i].maxAmount;
       if (models) {
-        for (var model in models) {
+        for (let model in models) {
           editFields += this.unit.getStatsHeadersHTML();
           editFields += this.getModelStatsHTML(this.unit, models[model]);
           editFields += this.unit.getWeaponsHeadersHTML();
@@ -63,17 +84,17 @@ export default class Editor {
 
     let allegianceHTML = this.getAllegianceHTML(this.unit);
     if (allegianceHTML !== '') {
-      editFields += '<tr><td class="modelType" colspan="11">Allegiance</td></tr>'
+      editFields += '<tr><td class="modelType" colspan="11">Allegiance</td></tr>';
       editFields += allegianceHTML;
     }
     editFields += '</table>';
 
-    editFields += '<button class="closeButton" type="button" onclick="editor.closeEdit()">Done</button>';
-    this.editorHtml.innerHTML = editFields;
+    editFields += '<button class="closeButton" type="button" onclick="list.editor.closeEdit()">Done</button>';
+    this.editorHTML.innerHTML = editFields;
   }
 
-  getUnitNameAndCostHTML(unit) {
-    var costHTML =  'Points: ' + unit.totalPoints
+  private getUnitNameAndCostHTML(unit) {
+    let costHTML =  'Points: ' + unit.totalPoints
                  +  ' | Power: ' + unit.totalPower
                  +  ' | Wounds: ' + unit.totalWounds
                  +  ' | Models: ' + unit.totalModels;
@@ -85,26 +106,25 @@ export default class Editor {
     return HTML;
   }
 
-  getModelTypeHTML(type) {
+  private getModelTypeHTML(type) {
     return '<tr><td class="modelType" colspan="11">' + type + '(s)</td></tr>';
   }
 
-  getButtonRowHTML(canAdd, canRemove, model) {
-    var modelId = "'" + model + "'";
+  private getButtonRowHTML(canAdd, canRemove, model) {
+    let  modelId = "'" + model + "'";
     let HTML = '<tr><td colspan="11">';
     if (canAdd) {
-      let button = document.createElement
-      HTML += '<button class="add" type="button" onclick="editor.addModel(' + modelId + ')">Add</button>';
+      HTML += '<button class="add" type="button" onclick="list.editor.addModel(' + modelId + ')">Add</button>';
     }
     if (canRemove) {
-      HTML += '<button class="remove" type="button" onclick="editor.removeModel(' + modelId + ')">Remove</button>';
+      HTML += '<button class="remove" type="button" onclick="list.editor.removeModel(' + modelId + ')">Remove</button>';
     }
     HTML += '</td></tr>';
     return HTML;
   } 
 
-  getModelStatsHTML(unit, model) {
-    var html = '';
+  private getModelStatsHTML(unit, model) {
+    let html = '';
     html += '<tr>'
       + '<td class="stat" id="name">' + model.name + '</td>'
       + '<td class="stat" id="m">' + unit.getUnProfiledStats(model.modelInfo.M) + '</td>'
@@ -121,11 +141,11 @@ export default class Editor {
     return html;
   }
 
-  getWeaponsHTML(model, faction) {
+  private getWeaponsHTML(model, faction) {
     let HTML = '';
     let selectedWeapons = model.modelInfo.Wargear.weapons[model.selectedWeaponConfig];
     for (let weapon of selectedWeapons) {
-      let weaponInfo = factionList[faction].wargear[weapon];
+      let weaponInfo = window.list.data.data[faction].wargear[weapon];
       if (weaponInfo !== undefined) {
         if (weaponInfo.WargearAbility !== undefined) {
           HTML += '<tr>'
@@ -150,8 +170,8 @@ export default class Editor {
           + '<td class="stat" id="name">' + weapon + '</td>'
           + '<td class="stat" id="description" colspan="9">' + desription + '</td>'
           + '</tr>';
-          for (var profile in weaponInfo.profiles) {
-            var profileInfo = weaponInfo.profiles[profile];
+          for (let profile in weaponInfo.profiles) {
+            let profileInfo = weaponInfo.profiles[profile];
             if (profileInfo !== undefined) {
               HTML += '<tr class="profile">'
               + '<td class="stat" id="name"> - ' + profile + '</td>'
@@ -170,10 +190,10 @@ export default class Editor {
     return HTML;
   }
 
-  getWeaponLoadoutSelectionHTML(type, id, model) {
+  private getWeaponLoadoutSelectionHTML(type, id, model) {
     let valueStr = '' + type + '-' + id + '-';
     let HTML = '';
-    HTML += '<tr><td colspan="11"><select onchange="editor.editLoadout(value);">';
+    HTML += '<tr><td colspan="11"><select onchange="window.list.editor.editLoadout(value);">';
     
     let loadoutLength = model.modelInfo.Wargear.weapons.length;
     let selected = model.selectedWeaponConfig;
@@ -181,7 +201,7 @@ export default class Editor {
       let weaponsList = model.modelInfo.Wargear.weapons[i];
       let cost = 0;
       for (let weapon = 0; weapon < weaponsList.length; weapon++) {
-        cost += factionList[this.unit.faction].wargear[weaponsList[weapon]].Points;
+        cost += window.list.data.data[this.unit.faction].wargear[weaponsList[weapon]].Points;
       }
       if (i == selected) {
         HTML += '<option value="' + valueStr + i + '" selected="selected">' + this.formatWeaponsList(model.modelInfo.Wargear.weapons[i]) + ' (' + cost + ' pnts)</option>';
@@ -194,7 +214,7 @@ export default class Editor {
     return HTML;
   }
 
-  formatWeaponsList(weapons) {
+  private formatWeaponsList(weapons) {
     let formattedList = '';
     for (let i = 0; i < weapons.length; i++) {
       formattedList += weapons[i];
@@ -205,14 +225,14 @@ export default class Editor {
     return formattedList;
   }
 
-  getAllegianceHTML(unit) {
+  private getAllegianceHTML(unit) {
     let HTML = '';
-    for (var modelType in unit.models) {
+    for (let modelType in unit.models) {
       if (unit.models[modelType].length > 0) {
         let allegiances = unit.models[modelType][0].modelInfo.Allegiance;
         if (allegiances !== undefined) {
           let selected = unit.models[modelType][0].selectedAllegiance;
-          HTML += '<tr><td colspan="11"><select onchange=editor.editAllegiance(value)>';
+          HTML += '<tr><td colspan="11"><select onchange="window.list.editor.editAllegiance(value);">';
           for (let i = 0; i < allegiances.length; i++) {
             if (i == selected) {
               HTML += '<option selected="selected" value="' + i + '">' + allegiances[i] + '</option>';
@@ -229,31 +249,7 @@ export default class Editor {
     return HTML;
   }
 
-  getSeperatorHTML() {
+  private getSeperatorHTML() {
     return '<tr><td class="seperator" colspan="11"><hr/></td></tr>';
   }
-
-  addModel(id) {
-    this.unit.addModel(id);
-  }
-
-  removeModel(id) {
-    this.unit.removeModel(id);
-  }
-
-  editLoadout(argStr) {
-    let args = argStr.split('-');
-    this.unit.updateModelWargear(args[0], args[1], args[2]);
-  }
-
-  editAllegiance(index) {
-    this.unit.updateAllegiance(index);
-  }
-
-  closeEdit() {
-    this.editorContainerHtml.style.width = '0px';
-    this.active = false;
-    list.updateCosts();
-    list.renderList();
-  } */
 }
