@@ -11,6 +11,9 @@ export default class FactionList {
     this.open = false;
     this.menuBtn = (document.getElementById("factionBtn") as HTMLElement);
     this.factionList = (document.getElementById("factionList") as HTMLElement);
+  }
+
+  public init() {
     this.setupFactionList();
   }
 

@@ -15,6 +15,9 @@ export default class Costs {
     this.powerElement = document.getElementById("POWER") as HTMLElement;
     this.woundsElement = document.getElementById("WOUNDS") as HTMLElement;
     this.modelsElement = document.getElementById("MODELS") as HTMLElement;
+  }
+
+  public init() {
     this.updateCosts();
   }
 

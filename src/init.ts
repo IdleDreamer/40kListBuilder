@@ -15,12 +15,12 @@ export default class ListBuilder {
   public editor: Editor;
 
   constructor() {
-    this.data = new Data(this.setup, this.loadingFailure);
     this.costs = new Costs();
     this.factionList = new FactionList();
     this.unitList = new UnitList();
     this.armyList = new ArmyList();
     this.editor = new Editor();
+    this.data = new Data(this.setup, this.loadingFailure);
   }
 
   public loadFactionData() {
@@ -28,11 +28,8 @@ export default class ListBuilder {
   }
 
   public setup() {
-    this.costs = new Costs();
-    this.factionList = new FactionList();
-    this.unitList = new UnitList();
-    this.armyList = new ArmyList();
-    this.editor = new Editor();
+    window.list.costs.init();
+    window.list.factionList.init();
   }
 
   public loadingFailure() {
