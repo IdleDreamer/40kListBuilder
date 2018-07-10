@@ -34,7 +34,7 @@ export default class Editor {
 
   public editLoadout(argStr) {
     let args = argStr.split('-');
-    this.unit.updateModelWargear(args[0], args[1], args[2]);
+    this.unit.updateModelWargear(args[0], args[1], args[2], args[3]);
   }
 
   public editAllegiance(index) {
@@ -143,7 +143,14 @@ export default class Editor {
 
   private getWeaponsHTML(model, faction) {
     let HTML = '';
-    let selectedWeapons = model.modelInfo.Wargear.weapons[model.selectedWeaponConfig];
+    let selectedWeapons: Array<string> = [];
+    for (let slot in model.modelInfo.Wargear) {
+      let index = model.selectedWeaponConfig[slot] || 0;
+      for (let weaponId of model.modelInfo.Wargear[slot][index]) {
+        selectedWeapons.push(weaponId);
+      }
+    }
+    // let selectedWeapons = model.modelInfo.Wargear.weapons[model.selectedWeaponConfig];
     for (let weapon of selectedWeapons) {
       let weaponInfo = window.list.data.data[faction].wargear[weapon];
       if (weaponInfo !== undefined) {
@@ -192,25 +199,39 @@ export default class Editor {
 
   private getWeaponLoadoutSelectionHTML(type, id, model) {
     let valueStr = '' + type + '-' + id + '-';
-    let HTML = '';
-    HTML += '<tr><td colspan="11"><select onchange="window.list.editor.editLoadout(value);">';
-    
-    let loadoutLength = model.modelInfo.Wargear.weapons.length;
-    let selected = model.selectedWeaponConfig;
-    for (let i = 0; i < loadoutLength; i++) {
-      let weaponsList = model.modelInfo.Wargear.weapons[i];
-      let cost = 0;
-      for (let weapon = 0; weapon < weaponsList.length; weapon++) {
-        cost += window.list.data.data[this.unit.faction].wargear[weaponsList[weapon]].Points;
+    let HTML = '<tr><td colspan="11">';
+    for (let slot in model.modelInfo.Wargear) {    
+      let valueId = valueStr + slot + '-';
+      let loadoutLength = model.modelInfo.Wargear[slot].length;
+      if (loadoutLength > 1) {
+        let selected = model.selectedWeaponConfig[slot] || 0;
+        HTML += '<select onchange="window.list.editor.editLoadout(value);">';   
+        for (let i = 0; i < loadoutLength; i++) {
+          let weaponsList = model.modelInfo.Wargear[slot][i];
+          let cost = 0;
+          for (let weapon = 0; weapon < weaponsList.length; weapon++) {
+            cost += window.list.data.data[this.unit.faction].wargear[weaponsList[weapon]].Points;
+          }
+          if (i == selected) {
+            HTML += '<option value="' + valueId + i + '" selected="selected">' + this.formatWeaponsList(model.modelInfo.Wargear[slot][i]) + ' (' + cost + ' pnts)</option>';
+          }
+          else {     
+            HTML += '<option value="' + valueId + i + '">' + this.formatWeaponsList(model.modelInfo.Wargear[slot][i]) + ' (' + cost + ' pnts)</option>';
+          }
+        }
+        HTML += '</select>';
       }
-      if (i == selected) {
-        HTML += '<option value="' + valueStr + i + '" selected="selected">' + this.formatWeaponsList(model.modelInfo.Wargear.weapons[i]) + ' (' + cost + ' pnts)</option>';
-      }
-      else {     
-        HTML += '<option value="' + valueStr + i + '">' + this.formatWeaponsList(model.modelInfo.Wargear.weapons[i]) + ' (' + cost + ' pnts)</option>';
+      else {
+        let name = this.formatWeaponsList(model.modelInfo.Wargear[slot][0]);
+        let cost = 0;
+        let weaponsList = model.modelInfo.Wargear[slot][0];
+        for (let weapon = 0; weapon < weaponsList.length; weapon++) {
+          cost += window.list.data.data[this.unit.faction].wargear[weaponsList[weapon]].Points;
+        }
+        HTML += '<div class="selectSingle">' + name + ' (' + cost + ' pnts)</div>';
       }
     }
-    HTML += '</select></td></tr>';
+    HTML += '</td></tr>';
     return HTML;
   }
 

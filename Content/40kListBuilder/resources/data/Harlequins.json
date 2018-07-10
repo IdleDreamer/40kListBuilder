@@ -224,7 +224,7 @@
       "Ld": 9,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Shrieker cannon"]
         ]
       },
@@ -252,9 +252,15 @@
       "Ld": 9,
       "Sv": "7+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken pistol","Hallucinogen grenade launcher","Miststave"],
-          ["Neuro disruptor","Hallucinogen grenade launcher","Miststave"]
+        "0": [
+          ["Shuriken pistol"],
+          ["Neuro disruptor"]
+        ],
+        "1": [
+          ["Hallucinogen grenade launcher"]
+        ],
+        "2": [
+          ["Miststave"]
         ]
       },
       "Abilities": {
@@ -281,11 +287,13 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken cannon","Star bolas"],
-          ["Haywire cannon","Star bolas"],
-          ["Shuriken cannon","Zephyrglaive"],
-          ["Haywire cannon","Zephyrglaive"]
+        "0": [
+          ["Shuriken cannon"],
+          ["Haywire cannon"]
+        ],
+        "1": [
+          ["Star bolas"],
+          ["Zephyrglaive"]
         ]
       },
       "Abilities": {
@@ -311,7 +319,7 @@
       "Ld": 9,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Harlequin's caress","Harlequin's kiss"]
         ]
       },
@@ -337,7 +345,7 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Shuriken cannon","Shuriken cannon"]
         ]
       },
@@ -365,19 +373,19 @@
       "Ld": 8,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken pistol","Harlequin's blade","Prismatic grenade"],
-          ["Neuro disruptor","Harlequin's blade","Prismatic grenade"],
-          ["Fusion pistol","Harlequin's blade","Prismatic grenade"],
-          ["Shuriken pistol","Harlequin's embrace","Prismatic grenade"],
-          ["Neuro disruptor","Harlequin's embrace","Prismatic grenade"],
-          ["Fusion pistol","Harlequin's embrace","Prismatic grenade"],
-          ["Shuriken pistol","Harlequin's kiss","Prismatic grenade"],
-          ["Neuro disruptor","Harlequin's kiss","Prismatic grenade"],
-          ["Fusion pistol","Harlequin's kiss","Prismatic grenade"],
-          ["Shuriken pistol","Harlequin's caress","Prismatic grenade"],
-          ["Neuro disruptor","Harlequin's caress","Prismatic grenade"],
-          ["Fusion pistol","Harlequin's caress","Prismatic grenade"]
+        "0": [
+          ["Shuriken pistol"],
+          ["Neuro disruptor"],
+          ["Fusion pistol"]
+        ],
+        "1": [
+          ["Harlequin's blade"],
+          ["Harlequin's embrace"],
+          ["Harlequin's kiss"],
+          ["Harlequin's caress"]
+        ],
+        "2": [
+          ["Prismatic grenade"]
         ]
       },
       "Abilities": {
@@ -402,22 +410,19 @@
       "Ld": 9,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken pistol", "Harlequin's blade", "Prismatic grenade"],
-          ["Neuro disruptor", "Harlequin's blade", "Prismatic grenade"],
-          ["Fusion pistol", "Harlequin's blade", "Prismatic grenade"],
-          ["Shuriken pistol", "Power sword", "Prismatic grenade"],
-          ["Shuriken pistol", "Harlequin's embrace", "Prismatic grenade"],
-          ["Shuriken pistol", "Harlequin's kiss", "Prismatic grenade"],
-          ["Shuriken pistol", "Harlequin's caress", "Prismatic grenade"],
-          ["Neuro disruptor", "Power sword", "Prismatic grenade"],
-          ["Neuro disruptor", "Harlequin's embrace", "Prismatic grenade"],
-          ["Neuro disruptor", "Harlequin's kiss", "Prismatic grenade"],
-          ["Neuro disruptor", "Harlequin's caress", "Prismatic grenade"],
-          ["Fusion pistol", "Power sword", "Prismatic grenade"],
-          ["Fusion pistol", "Harlequin's embrace", "Prismatic grenade"],
-          ["Fusion pistol", "Harlequin's kiss", "Prismatic grenade"],
-          ["Fusion pistol", "Harlequin's caress", "Prismatic grenade"]
+        "0": [
+          ["Shuriken pistol"],
+          ["Neuro disruptor"],
+          ["Fusion pistol"]
+        ],
+        "1": [
+          ["Harlequin's blade"],
+          ["Harlequin's embrace"],
+          ["Harlequin's kiss"],
+          ["Harlequin's caress"]
+        ],
+        "2": [
+          ["Prismatic grenade"]
         ]
       },
       "Abilities": {
@@ -443,9 +448,15 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken cannon", "Shuriken cannon", "Haywire cannon"],
-          ["Shuriken cannon", "Shuriken cannon", "Prismatic cannon"]
+        "0": [
+          ["Shuriken cannon"]
+        ],
+        "1": [
+          ["Shuriken cannon"]
+        ],
+        "2": [
+          ["Haywire cannon"],
+          ["Prismatic cannon"]
         ]
       },
       "Abilities": {

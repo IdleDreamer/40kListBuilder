@@ -479,6 +479,18 @@ hr {
   color: white;
 }
 
+#editorForm .selectSingle {
+  cursor: default;
+  background-color: #222222;
+  color: white;
+  float: left;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-top: 0.5px;
+  padding: 2px;
+  font-size: 12px;
+}
+
 #editorForm option {
   cursor: pointer;
   background-color: darkblue;

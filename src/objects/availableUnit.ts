@@ -27,10 +27,10 @@ export default class AvailableUnit {
       let model = window.list.data.data[this.faction].models[modelType.model];
       modelPoints += model.Points;  
       if (!model.PointsIncludesWargear) {
-        if(model.Wargear.weapons) {
-          for (let weapon = 0; weapon < model.Wargear.weapons[0].length; weapon++) {
-            modelPoints += window.list.data.data[this.faction].wargear[model.Wargear.weapons[0][weapon]].Points;
-          }
+        for (let slot in model.Wargear) {
+          for (let weapon = 0; weapon < model.Wargear[slot][0].length; weapon++) {
+            modelPoints += window.list.data.data[this.faction].wargear[model.Wargear[slot][0][weapon]].Points;
+          } 
         }
       }
       points += (modelPoints * modelType.defaultAmount);

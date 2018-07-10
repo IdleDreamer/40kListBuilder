@@ -68,7 +68,7 @@
       "Ld": 9,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Kha-vir, the Sword of Sorrows"]
         ]
       },
@@ -95,7 +95,7 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Asu-var, the Sword of Silent Screams"]
         ]
       },
@@ -120,7 +120,7 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Vilith-zhar, the Sword of Souls"]
         ]
       },

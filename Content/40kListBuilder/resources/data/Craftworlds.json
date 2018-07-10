@@ -199,7 +199,7 @@
       "Abilities": "If the target is within half range of this weapon, roll two dice when inflicting damage with it and discard the lowest result.",
       "Points": 9
     },
-    "Hawks Talon": {
+    "Hawk's Talon": {
       "Range": "24",
       "Type": "Assault 4",
       "S": "5",
@@ -936,8 +936,14 @@
       "Ld": 9,
       "Sv": "2+",
       "Wargear": {
-        "weapons": [
-          ["The Sword of Asur","Avenger Shuriken Catapult","Avenger Shuriken Catapult"]
+        "0": [
+          ["The Sword of Asur"]
+        ],
+        "1": [
+          ["Avenger Shuriken Catapult"]
+        ],
+        "2": [
+          ["Avenger Shuriken Catapult"]
         ]
       },
       "Abilities": {
@@ -962,8 +968,14 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Star Glaive","Plasma Grenades","Forceshield"]
+        "0": [
+          ["Star Glaive"]
+        ],
+        "1": [
+          ["Plasma Grenades"]
+        ],
+        "2": [
+          ["Forceshield"]
         ]
       },
       "Abilities": {
@@ -986,10 +998,13 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Power Sword","Twin Shuriken Catapult"],
-          ["Laser Lance","Twin Shuriken Catapult"],
-          ["Fusion Gun","Twin Shuriken Catapult"]
+        "0": [
+          ["Power Sword"],
+          ["Laser Lance"],
+          ["Fusion Gun"]
+        ],
+        "1": [
+          ["Twin Shuriken Catapult"]
         ]
       },
       "Abilities": {
@@ -1014,8 +1029,20 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Power Sword","Fusion Pistol","Plasma Grenades","Forceshield","Mandiblasters"]
+        "0": [
+          ["Power Sword"]
+        ],
+        "1": [
+          ["Fusion Pistol"]
+        ],
+        "2": [
+          ["Plasma Grenades"]
+        ],
+        "3": [
+          ["Forceshield"]
+        ],
+        "4": [
+          ["Mandiblasters"]
         ]
       },
       "Abilities": {
@@ -1040,7 +1067,9 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [["The Wailing Doom"]]
+        "0": [
+          ["The Wailing Doom"]
+        ]
       },
       "Abilities": {
         "faction": ["Ancient Doom", "Battle Focus"],
@@ -1065,8 +1094,11 @@
       "Ld": 9,
       "Sv": "2+",
       "Wargear": {
-        "weapons": [
-          ["The Shining Blade","Hawk's Talon"]
+        "0": [
+          ["The Shining Blade"]
+        ],
+        "1": [
+          ["Hawk's Talon"]
         ]
       },
       "Abilities": {
@@ -1093,8 +1125,14 @@
       "Ld": 9,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Witchblade","Staff of Ulthamar"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Witchblade"]
+        ],
+        "2": [
+          ["Staff of Ulthamar"]
         ]
       },
       "Abilities": {
@@ -1122,9 +1160,12 @@
       "Ld": 9,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Witchblade"],
-          ["Shuriken Pistol","Singing Spear"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Witchblade"],
+          ["Singing Spear"]
         ]
       },
       "Abilities": {
@@ -1151,9 +1192,15 @@
       "Ld": 9,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Witchblade","Twin Shuriken Catapult"],
-          ["Shuriken Pistol","Singing Spear","Twin Shuriken Catapult"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Witchblade"],
+          ["Singing Spear"]
+        ],
+        "2": [
+          ["Twin Shuriken Catapult"]
         ]
       },
       "Abilities": {
@@ -1181,8 +1228,14 @@
       "Ld": 9,
       "Sv": "2+",
       "Wargear": {
-        "weapons": [
-          ["Fire Axe","Firepike","Melta Bombs"]
+        "0": [
+          ["Fire Axe"]
+        ],
+        "1": [
+          ["Firepike"]
+        ],
+        "2": [
+          ["Melta Bombs"]
         ]
       },
       "Abilities": {
@@ -1208,8 +1261,14 @@
       "Ld": 9,
       "Sv": "5+",
       "Wargear": {
-        "weapons": [
-          ["Voidbringer","Shuriken Pistol","Power Sword"]
+        "0": [
+          ["Voidbringer"]
+        ],
+        "1": [
+          ["Shuriken Pistol"]
+        ],
+        "2": [
+          ["Power Sword"]
         ]
       },
       "Abilities": {
@@ -1234,8 +1293,14 @@
       "Ld": 9,
       "Sv": "2+",
       "Wargear": {
-        "weapons": [
-          ["Silent Death","Blade of Destruction","Banshee Mask"]
+        "0": [
+          ["Silent Death"]
+        ],
+        "1": [
+          ["Blade of Destruction"]
+        ],
+        "2": [
+          ["Banshee Mask"]
         ]
       },
       "Abilities": {
@@ -1261,8 +1326,14 @@
       "Ld": 9,
       "Sv": "2+",
       "Wargear": {
-        "weapons": [
-          [ "Scorpion Chainsword","Scorpion's Claw","Plasma Grenades"]
+        "0": [
+          [ "Scorpion Chainsword"]
+        ],
+        "1": [
+          ["Scorpion's Claw"]
+        ],
+        "2": [
+          ["Plasma Grenades"]
         ]
       },
       "Abilities": {
@@ -1288,7 +1359,9 @@
       "Ld": 9,
       "Sv": "2+",
       "Wargear": {
-        "weapons": [["The Maugetar"]]
+        "0": [
+          ["The Maugetar"]
+        ]
       },
       "Abilities": {
         "faction": ["Ancient Doom", "Battle Focus"],
@@ -1313,8 +1386,17 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["The Eye of Wrath","The Spear of Twilight","Plasma Grenades","Forceshield"]
+        "0": [
+          ["The Eye of Wrath"]
+        ],
+        "1": [
+          ["The Spear of Twilight"]
+        ],
+        "2": [
+          ["Plasma Grenades"]
+        ],
+        "3": [
+          ["Forceshield"]
         ]
       },
       "Abilities": {
@@ -1338,8 +1420,11 @@
       "Ld": 8,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Witch Staff"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Witch Staff"]
         ]
       },
       "Abilities": {
@@ -1365,9 +1450,12 @@
       "Ld": 8,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Witchblade"],
-          ["Shuriken Pistol","Singing Spear"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Witchblade"],
+          ["Singing Spear"]
         ]
       },
       "Abilities": {
@@ -1393,9 +1481,12 @@
       "Ld": 8,
       "Sv": "6+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Witchblade"],
-          ["Shuriken Pistol","Singing Spear"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Witchblade"],
+          ["Singing Spear"]
         ]
       },
       "Abilities": {
@@ -1421,9 +1512,15 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Witchblade","Twin Shuriken Catapult"],
-          ["Shuriken Pistol","Singing Spear","Twin Shuriken Catapult"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Witchblade"],
+          ["Singing Spear"]
+        ],
+        "2": [
+          ["Twin Shuriken Catapult"]
         ]
       },
       "Abilities": {
@@ -1449,9 +1546,15 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Witchblade","Twin Shuriken Catapult"],
-          ["Shuriken Pistol","Singing Spear","Twin Shuriken Catapult"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Witchblade"],
+          ["Singing Spear"]
+        ],
+        "2": [
+          ["Twin Shuriken Catapult"]
         ]
       },
       "Abilities": {
@@ -1478,8 +1581,11 @@
       "Ld": 7,
       "Sv": "5+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Catapult","Plasma Grenades"]
+        "0": [
+          ["Shuriken Catapult"]
+        ],
+        "1": [
+          ["Plasma Grenades"]
         ]
       },
       "Abilities": {
@@ -1502,7 +1608,7 @@
       "Ld": 7,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Shuriken Cannon"],
           ["Aeldari Missile Launcher"],
           ["Bright Lance"],
@@ -1531,13 +1637,17 @@
       "Ld": 7,
       "Sv": "5+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Aeldari Blade","Plasma Grenades"],
-          ["Shuriken Pistol","Chainsword","Plasma Grenades"],
-          ["Flamer","Aeldari Blade","Plasma Grenades"],
-          ["Flamer","Chainsword","Plasma Grenades"],
-          ["Fusion Gun","Aeldari Blade","Plasma Grenades"],
-          ["Fusion Gun","Chainsword","Plasma Grenades"]
+        "0": [
+          ["Shuriken Pistol"],
+          ["Flamer"],
+          ["Fusion Gun"]
+        ],
+        "1": [
+          ["Aeldari Blade"],
+          ["Chainsword"]
+        ],
+        "2": [
+          ["Plasma Grenades"]
         ]
       },
       "Abilities": {
@@ -1560,8 +1670,11 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Avenger Shuriken Catapult","Plasma Grenades"]
+        "0": [
+          ["Avenger Shuriken Catapult"]
+        ],
+        "1": [
+          ["Plasma Grenades"]
         ]
       },
       "Abilities": {
@@ -1585,12 +1698,15 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Avenger Shuriken Catapult","Plasma Grenades"],
-          ["Avenger Shuriken Catapult","Avenger Shuriken Catapult","Plasma Grenades"],
-          ["Shuriken Pistol","Power Glaive","Plasma Grenades"],
-          ["Shuriken Pistol","Diresword","Plasma Grenades"],
-          ["Shimmershield","Power Glaive","Plasma Grenades"]
+        "0": [
+          ["Avenger Shuriken Catapult"],
+          ["Avenger Shuriken Catapult","Avenger Shuriken Catapult"],
+          ["Shuriken Pistol","Power Glaive"],
+          ["Shuriken Pistol","Diresword"],
+          ["Shimmershield","Power Glaive"]
+        ],
+        "1": [
+          ["Plasma Grenades"]
         ]
       },
       "Abilities": {
@@ -1615,8 +1731,11 @@
       "Ld": 7,
       "Sv": "5+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Ranger Long Rifle"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Ranger Long Rifle"]
         ]
       },
       "Abilities": {
@@ -1641,8 +1760,14 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Power Sword","Banshee Mask"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Power Sword"]
+        ],
+        "2": [
+          ["Banshee Mask"]
         ]
       },
       "Abilities": {
@@ -1666,10 +1791,13 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Power Sword","Banshee Mask"],
-          ["Shuriken Pistol","Executioner","Banshee Mask"],
-          ["Mirrorswords","Banshee Mask"]
+        "0": [
+          ["Shuriken Pistol","Power Sword"],
+          ["Shuriken Pistol","Executioner"],
+          ["Mirrorswords"]
+        ],
+        "1": [
+          ["Banshee Mask"]
         ]
       },
       "Abilities": {
@@ -1694,8 +1822,17 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Scorpion Chainsword","Plasma Grenades","Mandiblasters"]
+        "0": [
+          ["Shuriken Pistol"]
+        ],
+        "1": [
+          ["Scorpion Chainsword"]
+        ],
+        "2": [
+          ["Plasma Grenades"]
+        ],
+        "3": [
+          ["Mandiblasters"]
         ]
       },
       "Abilities": {
@@ -1720,11 +1857,19 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Pistol","Scorpion Chainsword","Plasma Grenades","Mandiblasters"],
-          ["Scorpion's Claw","Scorpion Chainsword","Plasma Grenades","Mandiblasters"],
-          ["Shuriken Pistol","Biting Blade","Plasma Grenades","Mandiblasters"],
-          ["Scorpion's Claw","Biting Blade","Plasma Grenades","Mandiblasters"]
+        "0": [
+          ["Shuriken Pistol"],
+          ["Scorpion's Claw"]
+        ],
+        "1": [
+          ["Scorpion Chainsword"],
+          ["Biting Blade"]
+        ],
+        "2": [
+          ["Plasma Grenades"]
+        ],
+        "3": [
+          ["Mandiblasters"]
         ]
       },
       "Abilities": {
@@ -1750,8 +1895,11 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Fusion Gun","Melta Bombs"]
+        "0": [
+          ["Fusion Gun"]
+        ],
+        "1": [
+          ["Melta Bombs"]
         ]
       },
       "Abilities": {
@@ -1775,8 +1923,11 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Fusion Gun","Melta Bombs"]
+        "0": [
+          ["Fusion Gun"]
+        ],
+        "1": [
+          ["Melta Bombs"]
         ]
       },
       "Abilities": {
@@ -1801,7 +1952,7 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Ghostswords"],
           ["Ghost Axe", "Forceshield"]
         ]
@@ -1827,9 +1978,12 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Wraithcannon", "Wraithguard Fists"],
-          ["D-Scythe", "Wraithguard Fists"]
+        "0": [
+          ["Wraithcannon"],
+          ["D-Scythe"]
+        ],
+        "1": [
+          ["Wraithguard Fists"]
         ]
       },
       "Abilities": {
@@ -1853,7 +2007,7 @@
       "Ld": 7,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Twin Shuriken Catapult"],
           ["Scatter Laser"],
           ["Shuriken Cannon"]
@@ -1880,17 +2034,16 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Cannon", "Twin Shuriken Catapult"],
-          ["Shuriken Cannon", "Shuriken Cannon"],
-          ["Scatter Laser", "Twin Shuriken Catapult"],
-          ["Scatter Laser", "Shuriken Cannon"],
-          ["Bright Lance", "Twin Shuriken Catapult"],
-          ["Bright Lance", "Shuriken Cannon"],
-          ["Aeldari Missile Launcher", "Twin Shuriken Catapult"],
-          ["Aeldari Missile Launcher", "Shuriken Cannon"],
-          ["Starcannon", "Twin Shuriken Catapult"],
-          ["Starcannon", "Shuriken Cannon"]
+        "0": [
+          ["Shuriken Cannon"],
+          ["Scatter Laser"],
+          ["Bright Lance"],
+          ["Aeldari Missile Launcher"],
+          ["Starcannon"]
+        ],
+        "1": [
+          ["Twin Shuriken Catapult"],
+          ["Shuriken Cannon"]
         ]
       },
       "Abilities": {
@@ -1915,7 +2068,7 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Lasblaster"]
         ]
       },
@@ -1942,11 +2095,13 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Lasblaster"],
-          ["Hawk's Talon"],
-          ["Lasblaster", "Power Sword"],
-          ["Hawk's Talon", "Power Sword"]
+          ["Hawk's Talon"]
+        ],
+        "1": [
+          [],
+          ["Power Sword"]
         ]
       },
       "Abilities": {
@@ -1973,7 +2128,7 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Death Spinner"]
         ]
       },
@@ -2000,11 +2155,13 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Death Spinner"],
-          ["Death Spinner","Death Spinner"],
-          ["Death Spinner","Powerblades"],
-          ["Death Spinner","Death Spinner","Powerblades"]
+          ["Death Spinner","Death Spinner"]
+        ],
+        "1": [
+          [],
+          ["Powerblades"]
         ]
       },
       "Abilities": {
@@ -2031,8 +2188,11 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Laser Lance","Twin Shuriken Catapult"]
+        "0": [
+          ["Laser Lance"]
+        ],
+        "1": [
+          ["Twin Shuriken Catapult"]
         ]
       },
       "Abilities": {
@@ -2057,10 +2217,13 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Laser Lance","Twin Shuriken Catapult"],
-          ["Star Lance","Twin Shuriken Catapult"],
-          ["Paragon Sabre","Twin Shuriken Catapult"]
+        "0": [
+          ["Laser Lance"],
+          ["Star Lance"],
+          ["Paragon Sabre"]
+        ],
+        "1": [
+          ["Twin Shuriken Catapult"]
         ]
       },
       "Abilities": {
@@ -2086,32 +2249,19 @@
       "Ld": 8,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Cannon","Shuriken Cannon"],
-          ["Shuriken Cannon","Aeldari Missile Launcher"],
-          ["Shuriken Cannon","Bright Lance"],
-          ["Shuriken Cannon","Scatter Laser"],
-          ["Shuriken Cannon","Starcannon"],
-          ["Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Aeldari Missile Launcher","Aeldari Missile Launcher"],
-          ["Aeldari Missile Launcher","Bright Lance"],
-          ["Aeldari Missile Launcher","Scatter Laser"],
-          ["Aeldari Missile Launcher","Starcannon"],
-          ["Bright Lance","Shuriken Cannon"],
-          ["Bright Lance","Aeldari Missile Launcher"],
-          ["Bright Lance","Bright Lance"],
-          ["Bright Lance","Scatter Laser"],
-          ["Bright Lance","Starcannon"],
-          ["Scatter Laser","Shuriken Cannon"],
-          ["Scatter Laser","Aeldari Missile Launcher"],
-          ["Scatter Laser","Bright Lance"],
-          ["Scatter Laser","Scatter Laser"],
-          ["Scatter Laser","Starcannon"],
-          ["Starcannon","Shuriken Cannon"],
-          ["Starcannon","Aeldari Missile Launcher"],
-          ["Starcannon","Bright Lance"],
-          ["Starcannon","Scatter Laser"],
-          ["Starcannon","Starcannon"]
+        "0": [
+          ["Shuriken Cannon"],
+          ["Aeldari Missile Launcher"],
+          ["Bright Lance"],
+          ["Scatter Laser"],
+          ["Starcannon"]
+        ],
+        "1": [
+          ["Shuriken Cannon"],
+          ["Aeldari Missile Launcher"],
+          ["Bright Lance"],
+          ["Scatter Laser"],
+          ["Starcannon"]
         ]
       },
       "Abilities": {
@@ -2176,199 +2326,37 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists"],
-          ["Flamer","Flamer", "Wraithbone Fists"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive"],
+        "0": [
+          ["Shuriken Catapult"],
+          ["Flamer"]
+        ],
+        "1": [
+          ["Shuriken Catapult"],
+          ["Flamer"]
+        ],
+        "2": [
+          ["Wraithbone Fists"]
+        ],
+        "3": [
+          [],
+          ["Ghostglaive"]
+        ],
+        "4": [
+          [],
+          ["Shuriken Cannon"],
+          ["Aeldari Missile Launcher"],
+          ["Bright Lance"],
+          ["Scatter Laser"],
+          ["Starcannon"]
 
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher"],
-          ["Flamer","Flamer", "Wraithbone Fists","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Bright Lance"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Bright Lance"],
-          ["Flamer","Flamer", "Wraithbone Fists","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Scatter Laser"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Scatter Laser"],
-          ["Flamer","Flamer", "Wraithbone Fists","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Starcannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Starcannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Shuriken Cannon"],
-
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Aeldari Missile Launcher"],
-          ["Flamer","Flamer", "Wraithbone Fists","Aeldari Missile Launcher","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Aeldari Missile Launcher"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Aeldari Missile Launcher"],
-          ["Flamer","Flamer", "Wraithbone Fists","Bright Lance","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Aeldari Missile Launcher"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Bright Lance","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Aeldari Missile Launcher"],
-          ["Flamer","Flamer", "Wraithbone Fists","Scatter Laser","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Aeldari Missile Launcher"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Scatter Laser","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Starcannon","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Starcannon","Aeldari Missile Launcher"],
-          ["Flamer","Flamer", "Wraithbone Fists","Starcannon","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Aeldari Missile Launcher"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Starcannon","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Aeldari Missile Launcher"],
-          ["Flamer","Flamer", "Wraithbone Fists","Shuriken Cannon","Aeldari Missile Launcher"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Aeldari Missile Launcher"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Aeldari Missile Launcher"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Aeldari Missile Launcher"],
-
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Bright Lance"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Bright Lance"],
-          ["Flamer","Flamer", "Wraithbone Fists","Aeldari Missile Launcher","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Bright Lance"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Bright Lance"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Bright Lance"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Bright Lance"],
-          ["Flamer","Flamer", "Wraithbone Fists","Bright Lance","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Bright Lance"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Bright Lance"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Bright Lance","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Bright Lance"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Bright Lance"],
-          ["Flamer","Flamer", "Wraithbone Fists","Scatter Laser","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Bright Lance"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Bright Lance"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Scatter Laser","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Starcannon","Bright Lance"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Starcannon","Bright Lance"],
-          ["Flamer","Flamer", "Wraithbone Fists","Starcannon","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Bright Lance"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Bright Lance"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Starcannon","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Bright Lance"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Bright Lance"],
-          ["Flamer","Flamer", "Wraithbone Fists","Shuriken Cannon","Bright Lance"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Bright Lance"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Bright Lance"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Bright Lance"],
-
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Scatter Laser"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Scatter Laser"],
-          ["Flamer","Flamer", "Wraithbone Fists","Aeldari Missile Launcher","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Scatter Laser"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Scatter Laser"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Scatter Laser"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Scatter Laser"],
-          ["Flamer","Flamer", "Wraithbone Fists","Bright Lance","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Scatter Laser"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Scatter Laser"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Bright Lance","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Scatter Laser"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Scatter Laser"],
-          ["Flamer","Flamer", "Wraithbone Fists","Scatter Laser","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Scatter Laser"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Scatter Laser"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Scatter Laser","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Starcannon","Scatter Laser"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Starcannon","Scatter Laser"],
-          ["Flamer","Flamer", "Wraithbone Fists","Starcannon","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Scatter Laser"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Scatter Laser"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Starcannon","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Scatter Laser"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Scatter Laser"],
-          ["Flamer","Flamer", "Wraithbone Fists","Shuriken Cannon","Scatter Laser"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Scatter Laser"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Scatter Laser"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Scatter Laser"],
-
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Starcannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Starcannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Aeldari Missile Launcher","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Starcannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Starcannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Starcannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Starcannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Bright Lance","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Starcannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Starcannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Bright Lance","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Starcannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Starcannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Scatter Laser","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Starcannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Starcannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Scatter Laser","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Starcannon","Starcannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Starcannon","Starcannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Starcannon","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Starcannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Starcannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Starcannon","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Starcannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Starcannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Shuriken Cannon","Starcannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Starcannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Starcannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Starcannon"],
-
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Bright Lance","Shuriken Cannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Bright Lance","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Bright Lance","Shuriken Cannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Bright Lance","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Scatter Laser","Shuriken Cannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Scatter Laser","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Scatter Laser","Shuriken Cannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Scatter Laser","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Starcannon","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Starcannon","Shuriken Cannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Starcannon","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Starcannon","Shuriken Cannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Starcannon","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult", "Wraithbone Fists","Shuriken Cannon","Shuriken Cannon"],
-          ["Flamer","Flamer", "Wraithbone Fists","Shuriken Cannon","Shuriken Cannon"],
-          ["Shuriken Catapult","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Shuriken Cannon"],
-          ["Flamer","Shuriken Catapult","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Shuriken Cannon"],
-          ["Flamer","Flamer","Wraithbone Fists","Ghostglaive","Shuriken Cannon","Shuriken Cannon"]
+        ],
+        "5": [
+          [],
+          ["Shuriken Cannon"],
+          ["Aeldari Missile Launcher"],
+          ["Bright Lance"],
+          ["Scatter Laser"],
+          ["Starcannon"]
         ]
       },
       "Abilities": {
@@ -2391,10 +2379,13 @@
       "Ld": 7,
       "Sv": "4+",
       "Wargear": {
-        "weapons": [
-          ["Shuriken Catapult","Shadow Weaver"],
-          ["Shuriken Catapult","D-Cannon"],
-          ["Shuriken Catapult","Vibro Cannon"]
+        "0": [
+          ["Shuriken Catapult"]
+        ],
+        "1": [
+          ["Shadow Weaver"],
+          ["Vibro Cannon"],
+          ["D-Cannon"]
         ]
       },
       "Abilities": {
@@ -2419,7 +2410,7 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Reaper Launcher"]
         ]
       },
@@ -2444,7 +2435,7 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
+        "0": [
           ["Reaper Launcher"],
           ["Shuriken Cannon"],
           ["Aeldari Missile Launcher"],
@@ -2512,157 +2503,35 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Spirit Stones"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Star Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Shuriken Cannon","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Spirit Stones"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Star Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Scatter Laser","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Spirit Stones"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Star Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Bright Lance","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Spirit Stones"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Star Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Aeldari Missile Launcher","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Spirit Stones"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Star Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Starcannon","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Spirit Stones"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Star Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Shuriken Cannon","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Spirit Stones"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Star Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Scatter Laser","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Spirit Stones"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Star Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Bright Lance","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Spirit Stones"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Star Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Aeldari Missile Launcher","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Spirit Stones"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Star Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Pulse Laser","Starcannon","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"]
+        "0": [
+          ["Pulse Laser"]
+        ],
+        "1": [
+          ["Shuriken Cannon"],
+          ["Scatter Laser"],
+          ["Bright Lance"],
+          ["Aeldari Missile Launcher"],
+          ["Starcannon"]
+        ],
+        "2": [
+          ["Twin Shuriken Catapult"],
+          ["Shuriken Cannon"]
+        ],
+        "3": [
+          [],
+          ["Crystal Targeting Matrix"]
+        ],
+        "4": [
+          [],
+          ["Spirit Stones"]
+        ],
+        "5": [
+          [],
+          ["Star Engines"]
+        ],
+        "6": [
+          [],
+          ["Vectored Engines"]
         ]
       },
       "Abilities": {
@@ -2726,37 +2595,28 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Doomweaver","Twin Shuriken Catapult"],
-          ["Doomweaver","Shuriken Cannon"],
-          ["Doomweaver","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Doomweaver","Twin Shuriken Catapult","Spirit Stones"],
-          ["Doomweaver","Twin Shuriken Catapult","Star Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Vectored Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Doomweaver","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Doomweaver","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Doomweaver","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Doomweaver","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Doomweaver","Shuriken Cannon","Spirit Stones"],
-          ["Doomweaver","Shuriken Cannon","Star Engines"],
-          ["Doomweaver","Shuriken Cannon","Vectored Engines"],
-          ["Doomweaver","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Doomweaver","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Doomweaver","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Doomweaver","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Doomweaver","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Doomweaver","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Doomweaver","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Doomweaver","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Doomweaver","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Doomweaver","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"]
+        "0": [
+          ["Doomweaver"]
+        ],
+        "1": [
+          ["Twin Shuriken Catapult"],
+          ["Shuriken Cannon"]
+        ],
+        "2": [
+          [],
+          ["Crystal Targeting Matrix"]
+        ],
+        "3": [
+          [],
+          ["Spirit Stones"]
+        ],
+        "4": [
+          [],
+          ["Star Engines"]
+        ],
+        "5": [
+          [],
+          ["Vectored Engines"]
         ]
       },
       "Abilities": {
@@ -2819,37 +2679,28 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Prism Cannon","Twin Shuriken Catapult"],
-          ["Prism Cannon","Shuriken Cannon"],
-          ["Prism Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Prism Cannon","Twin Shuriken Catapult","Spirit Stones"],
-          ["Prism Cannon","Twin Shuriken Catapult","Star Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Vectored Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Prism Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Prism Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Prism Cannon","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Prism Cannon","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Prism Cannon","Shuriken Cannon","Spirit Stones"],
-          ["Prism Cannon","Shuriken Cannon","Star Engines"],
-          ["Prism Cannon","Shuriken Cannon","Vectored Engines"],
-          ["Prism Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Prism Cannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Prism Cannon","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Prism Cannon","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Prism Cannon","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Prism Cannon","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Prism Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Prism Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Prism Cannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Prism Cannon","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"]
+        "0": [
+          ["Prism Cannon"]
+        ],
+        "1": [
+          ["Twin Shuriken Catapult"],
+          ["Shuriken Cannon"]
+        ],
+        "2": [
+          [],
+          ["Crystal Targeting Matrix"]
+        ],
+        "3": [
+          [],
+          ["Spirit Stones"]
+        ],
+        "4": [
+          [],
+          ["Star Engines"]
+        ],
+        "5": [
+          [],
+          ["Vectored Engines"]
         ]
       },
       "Abilities": {
@@ -2913,157 +2764,32 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult"],
-          ["Twin Bright Lance","Twin Shuriken Catapult"],
-          ["Twin Starcannon","Twin Shuriken Catapult"],
-          ["Twin Shuriken Cannon","Shuriken Cannon"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon"],
-          ["Twin Scatter Laser","Shuriken Cannon"],
-          ["Twin Bright Lance","Shuriken Cannon"],
-          ["Twin Starcannon","Shuriken Cannon"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Spirit Stones"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Star Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Vectored Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Shuriken Cannon","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Spirit Stones"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Star Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Aeldari Missile Launcher","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Spirit Stones"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Star Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Vectored Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Scatter Laser","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Spirit Stones"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Star Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Vectored Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Bright Lance","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Bright Lance","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Spirit Stones"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Star Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Vectored Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Shuriken Cannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Shuriken Cannon","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Spirit Stones"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Star Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Aeldari Missile Launcher","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Twin Scatter Laser","Shuriken Cannon","Spirit Stones"],
-          ["Twin Scatter Laser","Shuriken Cannon","Star Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Vectored Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Scatter Laser","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Scatter Laser","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Twin Bright Lance","Shuriken Cannon","Spirit Stones"],
-          ["Twin Bright Lance","Shuriken Cannon","Star Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Vectored Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Bright Lance","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Bright Lance","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Spirit Stones"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Star Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Vectored Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Spirit Stones","Star Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Spirit Stones","Vectored Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Star Engines","Vectored Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Starcannon","Twin Shuriken Catapult","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Starcannon","Twin Shuriken Catapult","Spirit Stones","Star Engines","Vectored Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Crystal Targeting Matrix"],
-          ["Twin Starcannon","Shuriken Cannon","Spirit Stones"],
-          ["Twin Starcannon","Shuriken Cannon","Star Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Vectored Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones"],
-          ["Twin Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Vectored Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Spirit Stones","Star Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Spirit Stones","Vectored Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Star Engines","Vectored Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Star Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Spirit Stones","Vectored Engines"],
-          ["Twin Starcannon","Shuriken Cannon","Crystal Targeting Matrix","Star Engines","Vectored Engines"],            
-          ["Twin Starcannon","Shuriken Cannon","Spirit Stones","Star Engines","Vectored Engines"]
+        "0": [
+          ["Twin Shuriken Cannon"],
+          ["Twin Aeldari Missile Launcher"],
+          ["Twin Scatter Laser"],
+          ["Twin Bright Lance"],
+          ["Twin Starcannon"]
+        ],
+        "1": [
+          ["Twin Shuriken Catapult"],
+          ["Shuriken Cannon"]
+        ],
+        "2": [
+          [],
+          ["Crystal Targeting Matrix"]
+        ],
+        "3": [
+          [],
+          ["Spirit Stones"]
+        ],
+        "4": [
+          [],
+          ["Star Engines"]
+        ],
+        "5": [
+          [],
+          ["Vectored Engines"]
         ]
       },
       "Abilities": {
@@ -3115,8 +2841,14 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Pulse Laser","Bright Lance","Bright Lance"]
+        "0": [
+          ["Pulse Laser"]
+        ],
+        "1": [
+          ["Bright Lance"]
+        ],
+        "2": [
+          ["Bright Lance"]
         ]
       },
       "Abilities": {
@@ -3169,9 +2901,12 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Pulse Laser","Bright Lance","Bright Lance"],
-          ["Pulse Laser","Starcannon","Starcannon"]
+        "0": [
+          ["Pulse Laser"]
+        ],
+        "1": [
+          ["Bright Lance","Bright Lance"],
+          ["Starcannon","Starcannon"]
         ]
       },
       "Abilities": {
@@ -3212,8 +2947,11 @@
       "Ld": 8,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Heavy D-Scythe","Heavy D-Scythe"]
+        "0": [
+          ["Heavy D-Scythe"]
+        ],
+        "1": [
+          ["Heavy D-Scythe"]
         ]
       },
       "Abilities": {
@@ -3280,37 +3018,28 @@
       "Ld": 9,
       "Sv": "3+",
       "Wargear": {
-        "weapons": [
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Titanic Feet"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Scatter Laser"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Shuriken Cannon"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Starcannon"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Scatter Laser","Scatter Laser"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Scatter Laser","Shuriken Cannon"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Scatter Laser","Starcannon"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Shuriken Cannon","Shuriken Cannon"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Shuriken Cannon","Starcannon"],
-          ["Heavy Wraithcannon","Heavy Wraithcannon","Titanic Wraithbone Fists","Titanic Feet","Starcannon","Starcannon"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Scatter Laser"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Shuriken Cannon"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Starcannon"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Scatter Laser","Scatter Laser"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Scatter Laser","Shuriken Cannon"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Scatter Laser","Starcannon"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Shuriken Cannon","Shuriken Cannon"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Shuriken Cannon","Starcannon"],
-          ["Titanic Ghostglaive","Scattershield","Titanic Wraithbone Fists","Titanic Feet","Starcannon","Starcannon"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Scatter Laser"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Shuriken Cannon"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Starcannon"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Scatter Laser","Scatter Laser"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Scatter Laser","Shuriken Cannon"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Scatter Laser","Starcannon"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Shuriken Cannon","Shuriken Cannon"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Shuriken Cannon","Starcannon"],
-          ["Suncannon","Scattershield","Titanic Wraithbone Fists","Starcannon","Starcannon"]
+        "0": [
+          ["Heavy Wraithcannon","Heavy Wraithcannon"],
+          ["Titanic Ghostglaive","Scattershield"],
+          ["Suncannon","Scattershield"]
+        ],
+        "1": [
+          ["Titanic Wraithbone Fists"]
+        ],
+        "2": [
+          ["Titanic Feet"]
+        ],
+        "3": [
+          [],
+          ["Scatter Laser"],
+          ["Shuriken Cannon"],
+          ["Starcannon"]
+        ],
+        "4": [
+          [],
+          ["Scatter Laser"],
+          ["Shuriken Cannon"],
+          ["Starcannon"]
         ]
       },
       "Abilities": {

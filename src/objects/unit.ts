@@ -120,7 +120,14 @@ export default class Unit {
     let HTML = '';
     for (let modelType in this.models) {
       for (let i = 0; i < this.models[modelType].length; i++) {
-        let weapons = this.models[modelType][i].modelInfo.Wargear.weapons[this.models[modelType][i].selectedWeaponConfig];
+        let weapons: Array<string> = [];
+        let wargear = this.models[modelType][i].modelInfo.Wargear;
+        for (let slot in wargear) {
+          let selectedIndex = this.models[modelType][i].selectedWeaponConfig[slot] || 0;
+          for (let weaponId of wargear[slot][selectedIndex]) {
+            weapons.push(weaponId);
+          }
+        }
         for (let weapon in weapons) {
           if (listOfWeapons.indexOf(weapons[weapon]) === -1) {
             listOfWeapons.push(weapons[weapon]);
@@ -310,9 +317,9 @@ export default class Unit {
     window.list.editor.renderEdit();
   }
 
-  public updateModelWargear(modelType, modelIndex, selectedWeaponConfig) {
+  public updateModelWargear(modelType, modelIndex, weaponSlot, selectedWeaponConfig) {
     let model = this.unitInfo.modelTypes[modelType].model;
-    this.models[model][modelIndex].selectedWeaponConfig = selectedWeaponConfig;
+    this.models[model][modelIndex].selectedWeaponConfig[weaponSlot] = selectedWeaponConfig;
     this.updateCosts();
     window.list.armyList.updateCosts();
     window.list.editor.renderEdit();
@@ -352,11 +359,12 @@ export default class Unit {
         let model = this.models[modelType][modelIndex];
         points += model.modelInfo.Points;
         if (!model.modelInfo.PointsIncludesWargear) {
-          if(model.modelInfo.Wargear.weapons) {
-            let selectedWeapons = model.modelInfo.Wargear.weapons[model.selectedWeaponConfig];
+          for (let slot in model.modelInfo.Wargear) {
+            let index = model.selectedWeaponConfig[slot] || 0;
+            let selectedWeapons = model.modelInfo.Wargear[slot][index];
             for (let weapon = 0; weapon < selectedWeapons.length; weapon++) {
               points += window.list.data.data[this.faction].wargear[selectedWeapons[weapon]].Points;
-            }
+            } 
           }
         }
       }
