@@ -19,7 +19,10 @@ export default class ArmyList {
       "Spells": [],
       "Strategems": [],
       "Warlord Traits": [],
-      "Detachments": []
+      "Warlord Wargear": [],
+      "Detachments": [],
+      "Detachment Abilities": [],
+      "Tactical Objectives": []
     };
     this.currentUnits = 0;
   }

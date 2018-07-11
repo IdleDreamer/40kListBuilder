@@ -28,31 +28,31 @@
       "S": "8",
       "AP": "-4",
       "D": "D6",
-      "Abilities": "If when the target inflicting is within damage half with range it and of this discard weapon, the lowest roll two result.",
+      "Abilities": "If the target is within damage half range of this weapon, roll two dice when inflicting damage with it and discard the lowest result.",
       "Points": 9
-    },
+    },    
     "Hallucinogen grenade launcher": {
-      "Range": "28",
+      "Range": "18",
       "Type": "Assault 1",
       "S": "*",
       "AP": "*",
       "D": "*",
-      "Abilities": "Roll 2D6 if a unit is hit by this weapon - if the roll is equal to or greater than the target unit's Leadership, then it suffers D3 mortal wounds.",
+      "Abilities": "If a unit is hit by this weapon, roll 2D6 – if the roll is equal to or greater than the target unit's Leadership, it suffers D3 mortal wounds.",
       "Points": 0
     },
     "Haywire cannon": {
       "Range": "24",
-      "Type": "Heavy D3",
+      "Type": "Assault D6",
       "S": "4",
       "AP": "-1",
       "D": "1",
       "Abilities": "If the target is a VEHICLE and you roll a wound roll of 4+ for this weapon, the target suffers 1 mortal wound in addition to any other damage. If the wound roll is 6+, the target suffers D3 mortal wounds instead of 1.",
-      "Points": 14
+      "Points": 15
     },
     "Neuro disruptor": {
       "Range": "12",
       "Type": "Pistol 1",
-      "S": "3",
+      "S": "4",
       "AP": "-3",
       "D": "D3",
       "Abilities": "This weapon has a Damage of 1 against VEHICLE targets.",
@@ -63,7 +63,7 @@
       "profiles": {
         "Dispersed": {
           "Range": "24",
-          "Type": "Heavy D6",
+          "Type": "Assault D6",
           "S": "4",
           "AP": "-2",
           "D": "1",
@@ -71,7 +71,7 @@
         },
         "Focused": {
           "Range": "24",
-          "Type": "Heavy D3",
+          "Type": "Assault D3",
           "S": "6",
           "AP": "-3",
           "D": "D3",
@@ -79,7 +79,7 @@
         },
         "Lance": {
           "Range": "24",
-          "Type": "Heavy 1",
+          "Type": "Assault 1",
           "S": "8",
           "AP": "-4",
           "D": "D6",
@@ -88,15 +88,6 @@
       },
       "Points": 20
     },
-    "Prismatic grenade": {
-      "Range": "6",
-      "Type": "Grenade D6",
-      "S": "4",
-      "AP": "-1",
-      "D": "1",
-      "Abilities": "-",
-      "Points": 0
-    },
     "Shrieker cannon": {
       "description": "When attacking with this weapon, choose one of the profiles below. Each time you make a wound roll of 6+ for this weapon, that hit is resolved with an AP of -3 instead of 0.",
       "profiles": {
@@ -104,9 +95,9 @@
           "Range": "24",
           "Type": "Assault 1",
           "S": "6",
-          "AP": "0",
+          "AP": "-1",
           "D": "1",
-          "Abilities": "If an INFANTRYmodel is slain by an attack made with this weapon, then its unit suffers D3 mortal wounds."
+          "Abilities": "Each time an INFANTRY model is slain by an attack made with this weapon, its unit suffers D3 mortal wounds. If any models in a unit are slain by this weapon, subtract 2 from that unit's Leadership characteristic until the end of the turn."
         },
         "Shuriken": {
           "Range": "24",
@@ -142,7 +133,7 @@
       "Type": "Grenade D3",
       "S": "6",
       "AP": "-3",
-      "D": "1",
+      "D": "2",
       "Abilities": "-",
       "Points": 0
     },
@@ -153,21 +144,21 @@
       "AP": "0",
       "D": "1",
       "Abilities": "-",
-      "Points": 1
+      "Points": 0
     },
     "Harlequin's caress": {
       "Range": "Melee",
       "Type": "Melee",
-      "S": "5",
+      "S": "+2",
       "AP": "-2",
       "D": "1",
       "Abilities": "-",
-      "Points": 9
+      "Points": 7
     },
     "Harlequin's embrace": {
       "Range": "Melee",
       "Type": "Melee",
-      "S": "4",
+      "S": "+1",
       "AP": "-3",
       "D": "1",
       "Abilities": "-",
@@ -176,11 +167,11 @@
     "Harlequin's kiss": {
       "Range": "Melee",
       "Type": "Melee",
-      "S": "4",
+      "S": "+1",
       "AP": "-1",
       "D": "D3",
       "Abilities": "-",
-      "Points": 14
+      "Points": 7
     },
     "Miststave": {
       "Range": "Melee",
@@ -207,40 +198,21 @@
       "AP": "-2",
       "D": "2",
       "Abilities": "-",
-      "Points": 11
+      "Points": 6
+    },
+    "Plasma grenade": {
+      "Range": "6",
+      "Type": "Grenade D6",
+      "S": "4",
+      "AP": "-1",
+      "D": "1",
+      "Abilities": "-",
+      "Points": 0
     }
   },
   "models": {
-    "Death Jester": {
-      "Points": 75,
-      "PointsIncludesWargear": false,
-      "M": 8,
-      "WS": "2+",
-      "BS": "2+",
-      "S": 3,
-      "T": 3,
-      "W": 5,
-      "A": 4,
-      "Ld": 9,
-      "Sv": "6+",
-      "Wargear": {
-        "0": [
-          ["Shrieker cannon"]
-        ]
-      },
-      "Abilities": {
-        "faction": ["Rising Cresendo"],
-        "Flip Belt": "This unit can move across models and terrain as if they were not there.",
-        "Holo-suit": "Models in this unit have a 4+ invulnerable save.",
-        "Deadly Hunter": "This model may target a CHARACTER even if it is not the closest enemy unit.",
-        "Death Is Not Enough": " If any models flee from a unit in the same turn that it has been attacked by this model, then you can choose the first model that flees instead of your opponent choosing."
-      },
-      "Faction Keywords": ["Aeldari", "Harlequins"],
-      "Allegiance": ["[Masque]"],
-      "Keywords": ["Character", "Infantry", "Death Jester"]
-    },
     "Shadowseer": {
-      "Points": 134,
+      "Points": 125,
       "PointsIncludesWargear": false,
       "M": 8,
       "WS": "2+",
@@ -271,11 +243,142 @@
       },
       "Psyker": "This model can attempt to manifest two psychic powers in each friendly Psychic phase, and attempt to deny one psychic power in each enemy Psychic phase. It knows the Smite power and one psychic power from the Phantasmancy discipline (pg 68)",
       "Faction Keywords": ["Aeldari", "Harlequins"],
-      "Allegiance": ["[Masque]"],
+      "Allegiance": ["[Masque]", "MIDNIGHT SORROW", "VEILED PATH", "FROZEN STARS", "SOARING SPITE", "DREAMING SHADOW", "SILENT SHROUD"],
       "Keywords": ["Character", "Infantry", "Psyker", "Shadowseer"]
     },
+    "Troupe Master": {
+      "Points": 70,
+      "PointsIncludesWargear": false,
+      "M": 8,
+      "WS": "2+",
+      "BS": "2+",
+      "S": 3,
+      "T": 3,
+      "W": 5,
+      "A": 5,
+      "Ld": 9,
+      "Sv": "6+",
+      "Wargear": {
+        "0": [
+          ["Shuriken pistol"],
+          ["Neuro disruptor"],
+          ["Fusion pistol"]
+        ],
+        "1": [
+          ["Harlequin's blade"],
+          ["Power sword"],
+          ["Harlequin's embrace"],
+          ["Harlequin's kiss"],
+          ["Harlequin's caress"]
+        ],
+        "2": [
+          ["Plasma grenade"]
+        ]
+      },
+      "Abilities": {
+        "faction": ["Rising Cresendo"],
+        "Flip Belt": "This unit can move across models and terrain as if they were not there.",
+        "Holo-suit": "Models in this unit have a 4+ invulnerable save.",
+        "Choreographer of War": "In the Fight phase, re-roll failed wound rolls for friendly <MASQUE> units that are within 6\" of this model."
+      },
+      "Faction Keywords": ["Aeldari", "Harlequins"],
+      "Allegiance": ["[Masque]", "MIDNIGHT SORROW", "VEILED PATH", "FROZEN STARS", "SOARING SPITE", "DREAMING SHADOW", "SILENT SHROUD"],
+      "Keywords": ["Character", "Infantry", "Troupe Master"]
+    },
+    "Player": {
+      "Points": 13,
+      "PointsIncludesWargear": false,
+      "M": 8,
+      "WS": "3+",
+      "BS": "3+",
+      "S": 3,
+      "T": 3,
+      "W": 1,
+      "A": 4,
+      "Ld": 8,
+      "Sv": "6+",
+      "Wargear": {
+        "0": [
+          ["Shuriken pistol"],
+          ["Neuro disruptor"],
+          ["Fusion pistol"]
+        ],
+        "1": [
+          ["Harlequin's blade"],
+          ["Harlequin's embrace"],
+          ["Harlequin's kiss"],
+          ["Harlequin's caress"]
+        ],
+        "2": [
+          ["Plasma grenade"]
+        ]
+      },
+      "Abilities": {
+        "faction": ["Rising Cresendo"],
+        "Flip Belt": "This unit can move across models and terrain as if they were not there.",
+        "Holo-suit": "Models in this unit have a 4+ invulnerable save."
+      },
+      "Faction Keywords": ["Aeldari", "Harlequins"],
+      "Allegiance": ["[Masque]", "MIDNIGHT SORROW", "VEILED PATH", "FROZEN STARS", "SOARING SPITE", "DREAMING SHADOW", "SILENT SHROUD"],
+      "Keywords": ["Infantry", "Troupe"]
+    },
+    "Death Jester": {
+      "Points": 45,
+      "PointsIncludesWargear": false,
+      "M": 8,
+      "WS": "2+",
+      "BS": "2+",
+      "S": 3,
+      "T": 3,
+      "W": 5,
+      "A": 4,
+      "Ld": 9,
+      "Sv": "6+",
+      "Wargear": {
+        "0": [
+          ["Shrieker cannon"]
+        ]
+      },
+      "Abilities": {
+        "faction": ["Rising Cresendo"],
+        "Flip Belt": "This unit can move across models and terrain as if they were not there.",
+        "Holo-suit": "Models in this unit have a 4+ invulnerable save.",
+        "Deadly Hunter": "This model may target a CHARACTER even if it is not the closest enemy unit.",
+        "Death Is Not Enough": " If any models flee from a unit in the same turn that it has been attacked by this model, then you can choose the first model that flees instead of your opponent choosing."
+      },
+      "Faction Keywords": ["Aeldari", "Harlequins"],
+      "Allegiance": ["[Masque]", "MIDNIGHT SORROW", "VEILED PATH", "FROZEN STARS", "SOARING SPITE", "DREAMING SHADOW", "SILENT SHROUD"],
+      "Keywords": ["Character", "Infantry", "Death Jester"]
+    },
+    "Solitaire": {
+      "Points": 84,
+      "PointsIncludesWargear": false,
+      "M": 12,
+      "WS": "2+",
+      "BS": "2+",
+      "S": 3,
+      "T": 3,
+      "W": 5,
+      "A": 8,
+      "Ld": 9,
+      "Sv": "6+",
+      "Wargear": {
+        "0": [
+          ["Harlequin's caress","Harlequin's kiss"]
+        ]
+      },
+      "Abilities": {
+        "faction": ["Rising Cresendo"],
+        "The Path of Damnation": "The Solitaire can never have a Warlord Trait.",
+        "Flip Belt": "This unit can move across models and terrain as if they were not there.",
+        "Blitz": "Once per battle, instead of making a normal move with the Solitaire, you can make a Blitz move with it. If you do so, add 2D6\" to the model's Move characteristic for this turn. In addition, its Attacks characteristic is increased to 10 unitl the end of the turn. This ability may not be used if the model has been selected as the target of the Twilight Pathways psychic power in the previous Psychic phase.",
+        "Impossible Form": "The Solitaire has a 3+ invulnerable save."
+      },
+      "Faction Keywords": ["Aeldari", "Harlequins"],
+      "Keywords": ["Character", "Infantry", "Solitaire"]
+    },
     "Skyweaver": {
-      "Points": 35,
+      "Points": 30,
       "PointsIncludesWargear": false,
       "M": 16,
       "WS": "3+",
@@ -303,137 +406,8 @@
         "Mirage Launchers": "Your opponent must subtract 1 from any hit rolls made against this unit in the Shooting phase."
       },
       "Faction Keywords": ["Aeldari", "Harlequins"],
-      "Allegiance": ["[Masque]"],
+      "Allegiance": ["[Masque]", "MIDNIGHT SORROW", "VEILED PATH", "FROZEN STARS", "SOARING SPITE", "DREAMING SHADOW", "SILENT SHROUD"],
       "Keywords": ["Biker", "Fly", "Skyweavers"]
-    },
-    "Solitaire": {
-      "Points": 94,
-      "PointsIncludesWargear": false,
-      "M": 12,
-      "WS": "2+",
-      "BS": "2+",
-      "S": 3,
-      "T": 3,
-      "W": 5,
-      "A": 8,
-      "Ld": 9,
-      "Sv": "6+",
-      "Wargear": {
-        "0": [
-          ["Harlequin's caress","Harlequin's kiss"]
-        ]
-      },
-      "Abilities": {
-        "faction": ["Rising Cresendo"],
-        "Flip Belt": "This unit can move across models and terrain as if they were not there.",
-        "Blitz": "Once per battle, instead of making a normal move with the Solitaire, you can make a Blitz move with it. If you do so, add 2D6\" to the model's Move characteristic for this turn. In addition, the model's Attacks characteristic is increased to 10 for the rest of the turn. This ability may not be used if the model has been selected as the target of the Twilight Pathways psychic power in the previous Psychic phase.",
-        "Impossible Form": "The Solitaire has a 3+ invulnerable save."
-      },
-      "Faction Keywords": ["Aeldari", "Harlequins"],
-      "Keywords": ["Character", "Infantry", "Solitaire"]
-    },
-    "Starweaver": {
-      "Points": 79,
-      "PointsIncludesWargear": false,
-      "M": 16,
-      "WS": "3+",
-      "BS": "3+",
-      "S": 3,
-      "T": 4,
-      "W": 3,
-      "A": 3,
-      "Ld": 8,
-      "Sv": "4+",
-      "Wargear": {
-        "0": [
-          ["Shuriken cannon","Shuriken cannon"]
-        ]
-      },
-      "Abilities": {
-        "Open-topped": "Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on this model. When they do so, any restrictions or modifiers that apply to this model also apply to its passengers; for example, the passengers cannot shoot if this model has Fallen Back in the same turn, cannot shoot (except with Pistols) if this model is within 1\" of an enemy unit, and so on. Note that the passengers cannot shoot if this model Falls Back, even though the Starweaver itself can.",
-        "Blur of Colour": "When this unit Advances, add 6\" to its Move characteristic for that Movement phase instead of rolling a dice.",
-        "Mirage Launchers": "Your opponent must subtract 1 from any hit rolls made against this unit in the Shooting phase.",
-        "Holo-fields": "This model has a 4+ invulnerable save.",
-        "Explodes": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield and before any models disembark. On a 6 it explodes, and each unit within 6\" suffers 1 mortal wound."
-      },
-      "Faction Keywords": ["Aeldari", "Harlequins"],
-      "Allegiance": ["[Masque]"],
-      "Keywords": ["Vehicle", "Transport", "Fly", "Starweaver"]
-    },
-    "Player": {
-      "Points": 15,
-      "PointsIncludesWargear": false,
-      "M": 8,
-      "WS": "3+",
-      "BS": "3+",
-      "S": 3,
-      "T": 3,
-      "W": 1,
-      "A": 4,
-      "Ld": 8,
-      "Sv": "6+",
-      "Wargear": {
-        "0": [
-          ["Shuriken pistol"],
-          ["Neuro disruptor"],
-          ["Fusion pistol"]
-        ],
-        "1": [
-          ["Harlequin's blade"],
-          ["Harlequin's embrace"],
-          ["Harlequin's kiss"],
-          ["Harlequin's caress"]
-        ],
-        "2": [
-          ["Prismatic grenade"]
-        ]
-      },
-      "Abilities": {
-        "faction": ["Rising Cresendo"],
-        "Flip Belt": "This unit can move across models and terrain as if they were not there.",
-        "Holo-suit": "Models in this unit have a 4+ invulnerable save."
-      },
-      "Faction Keywords": ["Aeldari", "Harlequins"],
-      "Allegiance": ["[Masque]"],
-      "Keywords": ["Infantry", "Troupe"]
-    },
-    "Troupe Master": {
-      "Points": 59,
-      "PointsIncludesWargear": false,
-      "M": 8,
-      "WS": "2+",
-      "BS": "2+",
-      "S": 3,
-      "T": 3,
-      "W": 5,
-      "A": 5,
-      "Ld": 9,
-      "Sv": "6+",
-      "Wargear": {
-        "0": [
-          ["Shuriken pistol"],
-          ["Neuro disruptor"],
-          ["Fusion pistol"]
-        ],
-        "1": [
-          ["Harlequin's blade"],
-          ["Harlequin's embrace"],
-          ["Harlequin's kiss"],
-          ["Harlequin's caress"]
-        ],
-        "2": [
-          ["Prismatic grenade"]
-        ]
-      },
-      "Abilities": {
-        "faction": ["Rising Cresendo"],
-        "Flip Belt": "This unit can move across models and terrain as if they were not there.",
-        "Holo-suit": "Models in this unit have a 4+ invulnerable save.",
-        "Choreographer of War": "All friendly [Masque] units that are within 6\" of this model in the Fight phase can re-roll failed wound rolls."
-      },
-      "Faction Keywords": ["Aeldari", "Harlequins"],
-      "Allegiance": ["[Masque]"],
-      "Keywords": ["Character", "Infantry", "Troupe Master"]
     },
     "Voidweaver": {
       "Points": 68,
@@ -466,8 +440,60 @@
         "Explodes": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield and before any models disembark. On a 6 it explodes, and each unit within 6\" suffers 1 mortal wound."
       },
       "Faction Keywords": ["Aeldari", "Harlequins"],
-      "Allegiance": ["[Masque]"],
+      "Allegiance": ["[Masque]", "MIDNIGHT SORROW", "VEILED PATH", "FROZEN STARS", "SOARING SPITE", "DREAMING SHADOW", "SILENT SHROUD"],
       "Keywords": ["Vehicle", "Fly", "Starweaver"]
+    },
+    "Starweaver": {
+      "Points": 79,
+      "PointsIncludesWargear": false,
+      "M": 16,
+      "WS": "3+",
+      "BS": "3+",
+      "S": 5,
+      "T": 5,
+      "W": 6,
+      "A": 3,
+      "Ld": 8,
+      "Sv": "4+",
+      "Wargear": {
+        "0": [
+          ["Shuriken cannon","Shuriken cannon"]
+        ]
+      },
+      "Abilities": {
+        "Open-topped": "Models embarked on this model can attack in their Shooting phase. Measure the range and draw line of sight from any point on this model. When they do so, any restrictions or modifiers that apply to this model also apply to its passengers; for example, the passengers cannot shoot if this model has Fallen Back in the same turn, cannot shoot (except with Pistols) if this model is within 1\" of an enemy unit, and so on. Note that the passengers cannot shoot if this model Falls Back, even though the Starweaver itself can.",
+        "Blur of Colour": "When this unit Advances, add 6\" to its Move characteristic for that Movement phase instead of rolling a dice.",
+        "Mirage Launchers": "Your opponent must subtract 1 from any hit rolls made against this unit in the Shooting phase.",
+        "Holo-fields": "This model has a 4+ invulnerable save.",
+        "Explodes": "If this model is reduced to 0 wounds, roll a D6 before removing it from the battlefield and before any models disembark. On a 6 it explodes, and each unit within 6\" suffers 1 mortal wound."
+      },
+      "Faction Keywords": ["Aeldari", "Harlequins"],
+      "Allegiance": ["[Masque]", "MIDNIGHT SORROW", "VEILED PATH", "FROZEN STARS", "SOARING SPITE", "DREAMING SHADOW", "SILENT SHROUD"],
+      "Keywords": ["Vehicle", "Transport", "Fly", "Starweaver"]
+    },
+    "Webway Gate": {
+      "Points": 120,
+      "PointsIncludesWargear": false,
+      "M": "-",
+      "WS": "-",
+      "BS": "-",
+      "S": "-",
+      "T": 8,
+      "W": 14,
+      "A": "-",
+      "Ld": "-",
+      "Sv": "3+",
+      "Wargear": {
+      },
+      "Abilities": {
+        "Shimmering Arrival": "When you set up this model during deployment, it can be set up anywhere on the battlefield that is more than 12\" from the enemy deployment zone and any enemy models, and more than 3\" from any other terrain features or the centre of any objective markers.",
+        "Eldritch Aura": ":This model has a 5+ invulnerable save.",
+        "Immobile": "This model cannot move for any reason, nor can it fight in the Fight phase. Enemy models automatically hit this model in the Fight phase – do not make hit rolls. However, friendly units can still target enemy units that are within 1\" of this model.",
+        "Webway Strike": "After you set up this model, any AELDARI units you have not yet set up during deployment, other than Fortifications, can be set up in a webway spar rather than being set up on the battlefield. One unit in a webway spar can emerge from each friendly Webway Gate at the end of each of your Movement phases – set them up wholly within 3\" of the Webway Gate and more than 9\" away from any enemy models. If all friendly Webway Gates have been destroyed, any units that have not yet arrived from a webway spar are considered to be slain.",
+        "Webway Gate": "When measuring distances to and from aWebway Gate, measure from the closest point of the model. If a Webway Gate is destroyed, remove both arch pieces from the battlefield."
+      },
+      "Faction Keywords": ["Aeldari"],
+      "Keywords": ["Vehicle", "Building", "Webway Gate"]
     }
   },
   "units": {
@@ -507,14 +533,14 @@
           }
         ],
         "power": [
-          [5, 7],
-          [6, 8],
-          [7, 9],
-          [8, 10],
-          [9, 11],
-          [10, 12],
-          [11, 13],
-          [12, 14]
+          [5, 5],
+          [6, 6],
+          [7, 7],
+          [8, 8],
+          [9, 9],
+          [10, 10],
+          [11, 11],
+          [12, 12]
         ]
       }
     },
@@ -528,7 +554,7 @@
           }
         ],
         "power": [
-          [1, 4]
+          [1, 3]
         ]
       },
       "Solitaire": {
@@ -540,7 +566,7 @@
           }
         ],
         "power": [
-          [1, 6]
+          [1, 5]
         ]
       }
     },
@@ -554,9 +580,9 @@
           }
         ],
         "power": [
-          [2, 5],
-          [4, 10],
-          [6, 15]
+          [2, 4],
+          [4, 9],
+          [6, 13]
         ]
       }
     },
@@ -566,13 +592,11 @@
           {
             "model": "Voidweaver",
             "defaultAmount": 1,
-            "maxAmount": 3
+            "maxAmount": 1
           }
         ],
         "power": [
-          [1, 6],
-          [2, 12],
-          [3, 18]
+          [1, 6]
         ]
       }
     },
@@ -591,7 +615,20 @@
       }
     },
     "Flyer": {},
-    "Fortification": {},
+    "Fortification": {
+      "Webway Gate": {
+        "modelTypes": [
+          {
+            "model": "Webway Gate",
+            "defaultAmount": 1,
+            "maxAmount": 1
+          }
+        ],
+        "power": [
+          [1, 6]
+        ]
+      }
+    },
     "Lord Of War": {}
   }
 }
