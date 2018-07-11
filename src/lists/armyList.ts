@@ -15,7 +15,11 @@ export default class ArmyList {
       "Dedicated Transport": [],
       "Flyer": [],
       "Fortification": [],
-      "Lord Of War": []
+      "Lord Of War": [],
+      "Spells": [],
+      "Strategems": [],
+      "Warlord Traits": [],
+      "Detachments": []
     };
     this.currentUnits = 0;
   }
@@ -29,7 +33,7 @@ export default class ArmyList {
 
   public removeUnit(id: number) {
     for (let type in this.listContents) {
-      let tempArray: Array<any> = [];
+      let tempArray: Array<Unit> = [];
       for (let unit in this.listContents[type]) {
         if (this.listContents[type][unit].id !== id) {
           tempArray.push(this.listContents[type][unit]);

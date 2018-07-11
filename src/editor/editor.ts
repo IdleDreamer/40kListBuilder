@@ -1,3 +1,6 @@
+import Unit from '../objects/unit';
+import Model from '../objects/model';
+
 export default class Editor {
 
   private editorContainerHTML: HTMLElement;
@@ -24,20 +27,20 @@ export default class Editor {
     }
   }
 
-  public addModel(id) {
+  public addModel(id: string) {
     this.unit.addModel(id);
   }
 
-  public removeModel(id) {
+  public removeModel(id: string) {
     this.unit.removeModel(id);
   }
 
-  public editLoadout(argStr) {
+  public editLoadout(argStr: string) {
     let args = argStr.split('-');
     this.unit.updateModelWargear(args[0], args[1], args[2], args[3]);
   }
 
-  public editAllegiance(index) {
+  public editAllegiance(index: number) {
     this.unit.updateAllegiance(index);
   }
 
@@ -93,7 +96,7 @@ export default class Editor {
     this.editorHTML.innerHTML = editFields;
   }
 
-  private getUnitNameAndCostHTML(unit) {
+  private getUnitNameAndCostHTML(unit: Unit) {
     let costHTML =  'Points: ' + unit.totalPoints
                  +  ' | Power: ' + unit.totalPower
                  +  ' | Wounds: ' + unit.totalWounds
@@ -106,11 +109,11 @@ export default class Editor {
     return HTML;
   }
 
-  private getModelTypeHTML(type) {
+  private getModelTypeHTML(type: string) {
     return '<tr><td class="modelType" colspan="11">' + type + '(s)</td></tr>';
   }
 
-  private getButtonRowHTML(canAdd, canRemove, model) {
+  private getButtonRowHTML(canAdd: boolean, canRemove: boolean, model: number) {
     let  modelId = "'" + model + "'";
     let HTML = '<tr><td colspan="11">';
     if (canAdd) {
@@ -123,7 +126,7 @@ export default class Editor {
     return HTML;
   } 
 
-  private getModelStatsHTML(unit, model) {
+  private getModelStatsHTML(unit: Unit, model: Model) {
     let html = '';
     html += '<tr>'
       + '<td class="stat" id="name">' + model.name + '</td>'
@@ -141,7 +144,7 @@ export default class Editor {
     return html;
   }
 
-  private getWeaponsHTML(model, faction) {
+  private getWeaponsHTML(model: Model, faction: string) {
     let HTML = '';
     let selectedWeapons: Array<string> = [];
     for (let slot in model.modelInfo.Wargear) {
@@ -197,7 +200,7 @@ export default class Editor {
     return HTML;
   }
 
-  private getWeaponLoadoutSelectionHTML(type, id, model) {
+  private getWeaponLoadoutSelectionHTML(type: number, id: string, model: Model) {
     let valueStr = '' + type + '-' + id + '-';
     let HTML = '<tr><td colspan="11">';
     for (let slot in model.modelInfo.Wargear) {    
@@ -235,7 +238,7 @@ export default class Editor {
     return HTML;
   }
 
-  private formatWeaponsList(weapons, cost) {
+  private formatWeaponsList(weapons: Array<string>, cost: number) {
     let formattedList = '';
     for (let i = 0; i < weapons.length; i++) {
       formattedList += weapons[i];
@@ -252,7 +255,7 @@ export default class Editor {
     return formattedList;
   }
 
-  private getAllegianceHTML(unit) {
+  private getAllegianceHTML(unit: Unit) {
     let HTML = '';
     for (let modelType in unit.models) {
       if (unit.models[modelType].length > 0) {

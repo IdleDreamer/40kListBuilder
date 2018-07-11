@@ -292,7 +292,7 @@ export default class Unit {
     this.calculatePower();
   }
 
-  public addModel(modelType) {
+  public addModel(modelType: string) {
     let model = this.unitInfo.modelTypes[modelType].model;
     let modelInfo = window.list.data.data[this.faction].models[model];
     if (modelInfo !== undefined) {
@@ -304,7 +304,7 @@ export default class Unit {
     window.list.editor.renderEdit();
   }
 
-  public removeModel(modelType) {
+  public removeModel(modelType: string) {
     let model = this.unitInfo.modelTypes[modelType].model;
     if (this.models[model].length > 1) {
       this.models[model].pop();
@@ -317,7 +317,7 @@ export default class Unit {
     window.list.editor.renderEdit();
   }
 
-  public updateModelWargear(modelType, modelIndex, weaponSlot, selectedWeaponConfig) {
+  public updateModelWargear(modelType: string, modelIndex: number, weaponSlot: string, selectedWeaponConfig: number) {
     let model = this.unitInfo.modelTypes[modelType].model;
     this.models[model][modelIndex].selectedWeaponConfig[weaponSlot] = selectedWeaponConfig;
     this.updateCosts();
