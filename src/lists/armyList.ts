@@ -79,25 +79,34 @@ export default class ArmyList {
         let imageName = this.getImageName(type);
         listContainer.innerHTML += '<div id="typeHeader"><img src="/Content/40kListBuilder/resources/icons/' + imageName + '"/><h1>' + type + '</h1></div>';
       }
-      for (let unit = 0; unit < this.listContents[type].length; unit++) {
-        if (this.listContents[type][unit] !== null) {
-          let unitInfo = this.listContents[type][unit] as Unit;
-          let unitTable = document.createElement('table');
-          unitTable.className = "unitTable";
-          unitTable.id = '' + unitInfo.id;
-          unitTable.innerHTML += unitInfo.getUnitNameAndCostHTML();
-          unitTable.innerHTML += unitInfo.getStatsHeadersHTML();
-          unitTable.innerHTML += unitInfo.getStatsHTML();
-          unitTable.innerHTML += unitInfo.getWeaponsHeadersHTML();
-          unitTable.innerHTML += unitInfo.getWeaponsHTML();
-          unitTable.innerHTML += unitInfo.getAbilitiesHTML();
-          unitTable.innerHTML += unitInfo.getPsykerHTML();
-          unitTable.innerHTML += unitInfo.getAllegianceHTML();
-          unitTable.innerHTML += unitInfo.getKeywordsHTML();
-          listContainer.appendChild(unitTable);
-          listContainer.appendChild(this.getUnitControls(unitInfo.id));
-          listContainer.innerHTML += '<div class="clear"</div>';
+      if (this.listContents[type][0] && this.listContents[type][0] instanceof Unit) {
+        for (let unit = 0; unit < this.listContents[type].length; unit++) {
+          if (this.listContents[type][unit] !== null) {
+            let unitInfo = this.listContents[type][unit] as Unit;
+            let unitTable = document.createElement('table');
+            unitTable.className = "unitTable";
+            unitTable.id = '' + unitInfo.id;
+            unitTable.innerHTML += unitInfo.getUnitNameAndCostHTML();
+            unitTable.innerHTML += unitInfo.getStatsHeadersHTML();
+            unitTable.innerHTML += unitInfo.getStatsHTML();
+            unitTable.innerHTML += unitInfo.getWeaponsHeadersHTML();
+            unitTable.innerHTML += unitInfo.getWeaponsHTML();
+            unitTable.innerHTML += unitInfo.getAbilitiesHTML();
+            unitTable.innerHTML += unitInfo.getPsykerHTML();
+            unitTable.innerHTML += unitInfo.getAllegianceHTML();
+            unitTable.innerHTML += unitInfo.getKeywordsHTML();
+            listContainer.appendChild(unitTable);
+            listContainer.appendChild(this.getUnitControls(unitInfo.id));
+            listContainer.innerHTML += '<div class="clear"</div>';
+          }
         }
+      }
+      else {
+        // TODO:
+        // Spells
+        // Strategems
+        // Warlord Traits
+        // Detachments
       }
     }
     let spacer = document.createElement('div');
