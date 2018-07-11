@@ -213,35 +213,41 @@ export default class Editor {
             cost += window.list.data.data[this.unit.faction].wargear[weaponsList[weapon]].Points;
           }
           if (i == selected) {
-            HTML += '<option value="' + valueId + i + '" selected="selected">' + this.formatWeaponsList(model.modelInfo.Wargear[slot][i]) + ' (' + cost + ' pnts)</option>';
+            HTML += '<option value="' + valueId + i + '" selected="selected">' + this.formatWeaponsList(model.modelInfo.Wargear[slot][i], cost) + '</option>';
           }
           else {     
-            HTML += '<option value="' + valueId + i + '">' + this.formatWeaponsList(model.modelInfo.Wargear[slot][i]) + ' (' + cost + ' pnts)</option>';
+            HTML += '<option value="' + valueId + i + '">' + this.formatWeaponsList(model.modelInfo.Wargear[slot][i], cost) + '</option>';
           }
         }
         HTML += '</select>';
       }
       else {
-        let name = this.formatWeaponsList(model.modelInfo.Wargear[slot][0]);
         let cost = 0;
         let weaponsList = model.modelInfo.Wargear[slot][0];
         for (let weapon = 0; weapon < weaponsList.length; weapon++) {
           cost += window.list.data.data[this.unit.faction].wargear[weaponsList[weapon]].Points;
         }
-        HTML += '<div class="selectSingle">' + name + ' (' + cost + ' pnts)</div>';
+        let name = this.formatWeaponsList(model.modelInfo.Wargear[slot][0], cost);
+        HTML += '<div class="selectSingle">' + name + '</div>';
       }
     }
     HTML += '</td></tr>';
     return HTML;
   }
 
-  private formatWeaponsList(weapons) {
+  private formatWeaponsList(weapons, cost) {
     let formattedList = '';
     for (let i = 0; i < weapons.length; i++) {
       formattedList += weapons[i];
       if (i !== weapons.length - 1) {
         formattedList += ' | ';
       }
+    }
+    if (formattedList !== "") {
+      formattedList += ' (' + cost + ' pnts)';
+    }
+    else {
+      formattedList = '&lt;empty&gt;';
     }
     return formattedList;
   }

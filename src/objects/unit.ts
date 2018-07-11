@@ -103,7 +103,7 @@ export default class Unit {
 
   public getWeaponsHeadersHTML(): string {
     let HTML = '<tr>'
-        + '<th class="leftHeader">Weapon</th>'
+        + '<th class="leftHeader">Wargear</th>'
         + '<th>Range</th>'
         + '<th>Type</th>'
         + '<th>S</th>'
