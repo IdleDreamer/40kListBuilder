@@ -14,60 +14,6 @@
       "description": "You can re-roll hit rolls of 1 for friendly [Craftworld] units within 6\" of this model. In addition, if your army is Battle-forged and this model is your Warlord and on the battlefield, roll a D6 for each Command Point spent when using Stratagems; on a 6 that Command Point is immediately refunded. Note that for Prince Yriel, the first effect of this ability applies specifically to IYANDEN units."
     }
   ],
-  "spells": {
-    "Runes of Battle": {
-      "1": {
-        "name": "Conceal/Reveal",
-        "description": "Conceal: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - your opponent must subtract 1 from all hit rolls for ranged weapons that target that unit until your next Psychic phase. <br/> Reveal: Choose an enemy unit within 18\" of the psyker - it does not gain any bonus to its saving throws for being in cover until your next Psychic phase."
-      },
-      "2": {
-        "name": "Embolden/Horrify",
-        "description": "Embolden: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - add 2 to the Leadership characteristics of that unit until your next Psychic phase. <br/> Horrify: Choose an enemy unit within 18\" of the psyker - your opponent must subtract 1 from the Leadership of that unit until your next Psychic phase."
-      },
-      "3": {
-        "name": "Enhance/Drain",
-        "description": "Enhance: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - add 1 to hit rolls in the Fight phase made for that unit until your next Psychic phase. <br/> Drain: Choose an enemy unit within 18\" of the psyker - your opponent must subtract 1 from all hit rolls made for that unit in the Fight phase until your next Psychic phase."
-      },
-      "4": {
-        "name": "Protect/Jinx",
-        "description": "Protect: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - add 1 to the saving throws made for that unit until your next Psychic phase. <br/> Jinx: Choose an enemy unit within 18\" of the psyker - your opponent must subtract 1 from all saving throws made for that unit until your next Psychic phase."
-      },
-      "5": {
-        "name": "Quicken/Restrain",
-        "description": "Quicken: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - that unit can immediately move as if it were the Movement phase. You cannot use Quicken on a single unit more than once per Psychic phase.<br/> Restrain: Choose an enemy unit within 18\" of the psyker - your opponent must halve the Move characteristic of all models in that unit until your next Psychic phase."
-      },
-      "6": {
-        "name": "Empower/Enervate",
-        "description": "Empower: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - add 1 to wound rolls in the Fight phase for that unit until your next Psychic phase. <br/> Enervate: Choose an enemy unit within 18\" of the psyker - your opponent must subtract 1 from all wound rolls made for that unit in the Fight phase until your next Psychic phase."
-      }
-    },
-    "Runes of Fate": {
-      "1": {
-        "name": "Guide",
-        "description": "Guide has a warp charge value of 7. If manifested, choose a friendly ASURYANI unit within 24\" of the psyker. You can re-roll failed hit rolls for that unit's ranged weapons until your next Psychic phase."
-      },
-      "2": {
-        "name": "Doom",
-        "description": "Doom has a warp charge value of 7. If manifested, choose an enemy unit within 24\" of the psyker. You can re-roll failed wound rolls against that unit until your next Psychic phase."
-      },
-      "3": {
-        "name": "Fortune",
-        "description": "Fortune has a warp charge value of 7. If manifested, choose a friendly ASURYANI unit within 24\" of the psyker. Until your next Psychic phase, whenever that unit suffers a wound, roll a D6. On a 5+ that wound is ignored. If a unit already has an ability with a similar effect (e.g. Ulthwé's Foresight of the Damned attribute, or the Avatar of Khaine's Molten Body ability) then the effect of Fortune replaces that of the ability until your next Psychic phase."
-      },
-      "4": {
-        "name": "Executioner",
-        "description": "Executioner has a warp charge value of 7. If manifested, the nearest enemy unit within 18\" of the psyker suffers D3 mortal wounds. If a model in the target unit is slain as a result of this, the target unit suffers an additional D3 mortal wounds."
-      },
-      "5": {
-        "name": "Will of Asuryan",
-        "description": "Will of Asuryan has a warp charge value of 5. If manifested, friendly ASURYANI units automatically pass Morale tests while they are within 6\" of the psyker until your next Psychic phase. In addition, you can add 1 to all Deny the Witch tests that you make for the psyker until your next Psychic phase."
-      },
-      "6": {
-        "name": "Mind War",
-        "description": "Mind War has a warp charge value of 7. If manifested, choose an enemy CHARACTER model within 18\" of the psyker. Each player then rolls a D6 and adds their model's Leadership characteristic to their result. If your opponent scores higher, or if the scores are drawn, nothing happens. If the psyker's score is higher, the target suffers a number of mortal wounds equal to the difference between the two scores."
-      }
-    }
-  },
   "wargear": {
     "Aeldari Missile Launcher": {
       "description": "When attacking with this weapon, choose one of the profiles below.",
@@ -3705,6 +3651,124 @@
         "power": [
           [1, 27]
         ]
+      }
+    }
+  },
+  "spells": {
+    "Runes of Battle": {
+      "1": {
+        "name": "Conceal/Reveal",
+        "description": "Conceal: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - your opponent must subtract 1 from all hit rolls for ranged weapons that target that unit until your next Psychic phase. <br/> Reveal: Choose an enemy unit within 18\" of the psyker - it does not gain any bonus to its saving throws for being in cover until your next Psychic phase."
+      },
+      "2": {
+        "name": "Embolden/Horrify",
+        "description": "Embolden: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - add 2 to the Leadership characteristics of that unit until your next Psychic phase. <br/> Horrify: Choose an enemy unit within 18\" of the psyker - your opponent must subtract 1 from the Leadership of that unit until your next Psychic phase."
+      },
+      "3": {
+        "name": "Enhance/Drain",
+        "description": "Enhance: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - add 1 to hit rolls in the Fight phase made for that unit until your next Psychic phase. <br/> Drain: Choose an enemy unit within 18\" of the psyker - your opponent must subtract 1 from all hit rolls made for that unit in the Fight phase until your next Psychic phase."
+      },
+      "4": {
+        "name": "Protect/Jinx",
+        "description": "Protect: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - add 1 to the saving throws made for that unit until your next Psychic phase. <br/> Jinx: Choose an enemy unit within 18\" of the psyker - your opponent must subtract 1 from all saving throws made for that unit until your next Psychic phase."
+      },
+      "5": {
+        "name": "Quicken/Restrain",
+        "description": "Quicken: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - that unit can immediately move as if it were the Movement phase. You cannot use Quicken on a single unit more than once per Psychic phase.<br/> Restrain: Choose an enemy unit within 18\" of the psyker - your opponent must halve the Move characteristic of all models in that unit until your next Psychic phase."
+      },
+      "6": {
+        "name": "Empower/Enervate",
+        "description": "Empower: Choose a friendly ASURYANI INFANTRY or ASURYANI BIKER unit within 18\" of the psyker - add 1 to wound rolls in the Fight phase for that unit until your next Psychic phase. <br/> Enervate: Choose an enemy unit within 18\" of the psyker - your opponent must subtract 1 from all wound rolls made for that unit in the Fight phase until your next Psychic phase."
+      }
+    },
+    "Runes of Fate": {
+      "1": {
+        "name": "Guide",
+        "description": "Guide has a warp charge value of 7. If manifested, choose a friendly ASURYANI unit within 24\" of the psyker. You can re-roll failed hit rolls for that unit's ranged weapons until your next Psychic phase."
+      },
+      "2": {
+        "name": "Doom",
+        "description": "Doom has a warp charge value of 7. If manifested, choose an enemy unit within 24\" of the psyker. You can re-roll failed wound rolls against that unit until your next Psychic phase."
+      },
+      "3": {
+        "name": "Fortune",
+        "description": "Fortune has a warp charge value of 7. If manifested, choose a friendly ASURYANI unit within 24\" of the psyker. Until your next Psychic phase, whenever that unit suffers a wound, roll a D6. On a 5+ that wound is ignored. If a unit already has an ability with a similar effect (e.g. Ulthwé's Foresight of the Damned attribute, or the Avatar of Khaine's Molten Body ability) then the effect of Fortune replaces that of the ability until your next Psychic phase."
+      },
+      "4": {
+        "name": "Executioner",
+        "description": "Executioner has a warp charge value of 7. If manifested, the nearest enemy unit within 18\" of the psyker suffers D3 mortal wounds. If a model in the target unit is slain as a result of this, the target unit suffers an additional D3 mortal wounds."
+      },
+      "5": {
+        "name": "Will of Asuryan",
+        "description": "Will of Asuryan has a warp charge value of 5. If manifested, friendly ASURYANI units automatically pass Morale tests while they are within 6\" of the psyker until your next Psychic phase. In addition, you can add 1 to all Deny the Witch tests that you make for the psyker until your next Psychic phase."
+      },
+      "6": {
+        "name": "Mind War",
+        "description": "Mind War has a warp charge value of 7. If manifested, choose an enemy CHARACTER model within 18\" of the psyker. Each player then rolls a D6 and adds their model's Leadership characteristic to their result. If your opponent scores higher, or if the scores are drawn, nothing happens. If the psyker's score is higher, the target suffers a number of mortal wounds equal to the difference between the two scores."
+      }
+    }
+  },
+  "detachmentAbilities": {
+    "faction": {
+      "name": "",
+      "description": ""
+    },
+    "allegiance": {
+      "": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "strategems": {
+    "": {
+      "cost": 0,
+      "description": ""
+    }
+  },
+  "warlordTraits": {
+    "faction": {
+      "1": {
+        "name": "",
+        "description": ""
+      }
+    },
+    "allegiance": {
+      "": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "warlordWargear": {
+    "<name>": {
+      "description": "",
+      "profiles": {
+        "<name>": {
+          "Range": "",
+          "Type": "",
+          "S": "",
+          "AP": "",
+          "D": "",
+          "Abilities": "-"
+        },
+        "": {
+          "Range": "",
+          "Type": "",
+          "S": "",
+          "AP": "",
+          "D": "",
+          "Abilities": "-"
+        }
+      }
+    }
+  },
+  "tacticalObjectives": {
+    "description": "",
+    "objectives": {
+      "<name>" : {
+        "dgg": 11,
+        "description": ""
       }
     }
   }

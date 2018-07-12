@@ -5,22 +5,6 @@
       "description": "Units with this ability can Advance and charge in the same turn. In addition, they can Fall Back and still shoot and/or charge in the same turn."
     }
   ],
-  "spells": {
-    "Phantasmancy Discipline": {
-      "1": {
-        "name": "Twilight Pathways",
-        "description": "Twilight Pathways has a warp charge value of 6. If manifested, select a visible friendly HARLEQUINS unit within 3\" of the psyker. That unit can immediately move as if it were its Movement phase. You cannot use Twilight Pathways on a unit more than once in each Psychic phase."
-      },
-      "2": {
-        "name": "Fog of Dreams",
-        "description": "Fog of Dreams has a warp charge value of 7. If manifested, select a visible enemy unit within 18\" of the psyker. Until the start of your next Psychic phase, your opponent must subtract 1 from all hit rolls for that unit that target HARLEQUIN INFANTRY units."
-      },
-      "3": {
-        "name": "Mirror of Minds",
-        "description": "Mirror of Minds has a warp charge value of 8. If manifested, select an enemy unit within 24\" of the psyker. Then, both players roll a dice. If the Harlequin player's roll is equal to or higher than their opponent's, then the target unit suffers 1 mortal wound. Repeat this process until the target is destroyed, or the enemy player rolls a result that is higher than the Harlequin player's roll."
-      }
-    }    
-  },
   "wargear": {
     "Fusion pistol": {
       "Range": "6",
@@ -630,5 +614,97 @@
       }
     },
     "Lord Of War": {}
+  },
+  "spells": {
+    "Phantasmancy Discipline": {
+      "1": {
+        "name": "Twilight Pathways",
+        "description": "Twilight Pathways has a warp charge value of 6. If manifested, select a visible friendly HARLEQUINS unit within 3\" of the psyker. That unit can immediately move as if it were its Movement phase. You cannot use Twilight Pathways on a unit more than once in each Psychic phase."
+      },
+      "2": {
+        "name": "Fog of Dreams",
+        "description": "Fog of Dreams has a warp charge value of 7. If manifested, select a visible enemy unit within 18\" of the psyker. Until the start of your next Psychic phase, your opponent must subtract 1 from all hit rolls for that unit that target HARLEQUIN INFANTRY units."
+      },
+      "3": {
+        "name": "Mirror of Minds",
+        "description": "Mirror of Minds has a warp charge value of 8. If manifested, select an enemy unit within 24\" of the psyker. Then, both players roll a dice. If the Harlequin player's roll is equal to or higher than their opponent's, then the target unit suffers 1 mortal wound. Repeat this process until the target is destroyed, or the enemy player rolls a result that is higher than the Harlequin player's roll."
+      },
+      "4": {
+        "name": "Veil of Tears",
+        "description": "Veil of Tears has a warp charge value of 7.If manifested, select a friendly HARLEQUINS INFANTRY unit within 18\" of the psyker. Until the start of your next Psychic phase, subtract 1 from hit rolls for attacks made against that unit."
+      },
+      "5": {
+        "name": "Shards of Light",
+        "description": "Shards of Light has a warp charge value of 7. If manifested, select an enemy unit within 18\" of the psyker and visible to it. That unit suffers D3 mortal wounds and must subtract 1 from its Leadership characteristic until the start of your next Psychic phase."
+      },
+      "6": {
+        "name": "Webway Dance",
+        "description": "Webway Dance has a warp charge value of 7. If manifested, then until the start of your next Psychic phase, roll a D6 whenever a friendly HARLEQUINS unit within 6\" of the psyker loses a wound; on a 6 that wound is not lost."
+      }
+    }    
+  },
+  "detachmentAbilities": {
+    "faction": {
+      "name": "",
+      "description": ""
+    },
+    "allegiance": {
+      "": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "strategems": {
+    "": {
+      "cost": 0,
+      "description": ""
+    }
+  },
+  "warlordTraits": {
+    "faction": {
+      "1": {
+        "name": "",
+        "description": ""
+      }
+    },
+    "allegiance": {
+      "": {
+        "name": "",
+        "description": ""
+      }
+    }
+  },
+  "warlordWargear": {
+    "<name>": {
+      "description": "",
+      "profiles": {
+        "<name>": {
+          "Range": "",
+          "Type": "",
+          "S": "",
+          "AP": "",
+          "D": "",
+          "Abilities": "-"
+        },
+        "": {
+          "Range": "",
+          "Type": "",
+          "S": "",
+          "AP": "",
+          "D": "",
+          "Abilities": "-"
+        }
+      }
+    }
+  },
+  "tacticalObjectives": {
+    "description": "",
+    "objectives": {
+      "<name>" : {
+        "dgg": 11,
+        "description": ""
+      }
+    }
   }
 }
