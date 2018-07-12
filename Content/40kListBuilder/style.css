@@ -366,6 +366,15 @@ hr {
   cursor: pointer;
 }
 
+#newList .spellName {
+  width: 130px;
+  text-align: center;
+}
+
+#newList .spellDescription {
+  width: 670px;
+}
+
 #editor {
   background-color: rgba(0,0,0,0.7);
   height: 100%;

@@ -1,4 +1,5 @@
 import Unit from '../objects/unit';
+import SpellList from '../objects/spellList';
 
 export default class ArmyList {
 
@@ -49,11 +50,13 @@ export default class ArmyList {
   }
 
   public addSmiteSpell() {
-    // TODO
+    this.listContents['Spells'].push(new SpellList('', 'Smite'));
+    this.renderList();
   }
 
   public addFactionSpells(faction: string, spells: string) {
-    // TODO
+    this.listContents['Spells'].push(new SpellList(faction, spells));
+    this.renderList();
   }
 
   public updateCosts() {
@@ -104,7 +107,12 @@ export default class ArmyList {
           }
         }
       }
-      else {
+      else if (this.listContents[type][0] && this.listContents[type][0] instanceof SpellList) {
+        for (let spell = 0; spell < this.listContents[type].length; spell++) {
+          if (this.listContents[type][spell] !== null) {
+            listContainer.appendChild((this.listContents[type][spell] as SpellList).getSpellsHTML());
+          }
+        }
         // TODO:
         // Spells
         // Strategems
@@ -147,6 +155,8 @@ export default class ArmyList {
       case "Lord Of War":
         imageName = 'lordofwar.png';
         break;
+      case "Spells":
+        imageName = 'spells.png';
     }
     return imageName;
   }
