@@ -11,7 +11,7 @@ I started this project because I did not like the alternatives - the official li
 * Harlequins
 * Ynnari
 
-The plan is to make it work for all the factions, but trying to convert all of the data into rule-based structurs that are common across all factions is a real mission. So I started with the ones that I personally use as I understand them better.
+The plan is to make it work for all the factions, but trying to convert all of the data into rule-based structures that are common across all factions is a real mission. So I started with the ones that I personally use as I understand them better.
 
 ## Outstanding work/Work to be done ##
 * Spells
@@ -20,7 +20,6 @@ The plan is to make it work for all the factions, but trying to convert all of t
 * Detachments
 * Need a way of easily identifying which wargear belongs to which model in a unit
 * Full faction support
-* Upgrade project to use parcel.js and npm scripts
 
 ## Installing/Running the project ##
 1. Clone repo
