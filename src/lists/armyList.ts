@@ -83,7 +83,7 @@ export default class ArmyList {
     for (let type in this.listContents) {
       if (this.listContents[type].length > 0) {
         let imageName = this.getImageName(type);
-        listContainer.innerHTML += '<div id="typeHeader"><img src="/Content/40kListBuilder/resources/icons/' + imageName + '"/><h1>' + type + '</h1></div>';
+        listContainer.innerHTML += '<div id="typeHeader"><img src="Content/40kListBuilder/resources/icons/' + imageName + '"/><h1>' + type + '</h1></div>';
       }
       if (this.listContents[type][0] && this.listContents[type][0] instanceof Unit) {
         for (let unit = 0; unit < this.listContents[type].length; unit++) {
@@ -168,13 +168,13 @@ export default class ArmyList {
     let deleteBtn = document.createElement('li');
     deleteBtn.className = "button";
     deleteBtn.id = 'delete' + id;
-    deleteBtn.innerHTML = '<img onclick="list.armyList.removeUnit(' + id + ')" src="/Content/40kListBuilder/resources/icons/delete.png"/>';
+    deleteBtn.innerHTML = '<img onclick="list.armyList.removeUnit(' + id + ')" src="Content/40kListBuilder/resources/icons/delete.png"/>';
     controlList.appendChild(deleteBtn);
 
     let editBtn = document.createElement('li');
     editBtn.className = "button";
     editBtn.id = 'edit' + id;
-    editBtn.innerHTML = '<img onclick="list.editor.editUnit(' + id + ')" src="/Content/40kListBuilder/resources/icons/edit.png"/>';
+    editBtn.innerHTML = '<img onclick="list.editor.editUnit(' + id + ')" src="Content/40kListBuilder/resources/icons/edit.png"/>';
     controlList.appendChild(editBtn);
 
     return controlList;

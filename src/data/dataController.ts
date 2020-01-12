@@ -30,7 +30,7 @@ export default class Data {
         request.onerror = () => {
           this.onFileFailed();
         };
-        request.open('get', '/Content/40kListBuilder/resources/data/' + json);
+        request.open('get', 'Content/40kListBuilder/resources/data/' + json);
         request.send();
       }
     }
