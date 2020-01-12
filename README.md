@@ -26,3 +26,5 @@ The plan is to make it work for all the factions, but trying to convert all of t
 2. Open a terminal within the repo
 3. run `npm i` to install dependencies
 4. run `gulp watch` to build and launch the project while watching for changes
+
+It's worth noting that GitHub has detected various security vulnerabilities within the project's dependencies.
