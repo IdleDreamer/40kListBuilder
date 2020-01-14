@@ -1,15 +1,9 @@
 {
-  "name": "attempt2d",
+  "name": "40klistbuilder",
   "version": "0.0.1",
-  "description": "A simple 2D game engine",
-  "main": "dist/game/game.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://c_patrick@bitbucket.org/c_patrick/attempt2d.git"
-  },
-  "author": "Connor Patrick",
+  "description": "A simple list building webapp for 40K 8th editio",
+  "main": "src/init.ts",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/c_patrick/attempt2d#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "browserify": "^16.1.0",
