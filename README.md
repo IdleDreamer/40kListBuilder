@@ -1,6 +1,6 @@
 # 40K List Builder 8e #
 
-<b>Note: this project is far from complete and only gains traction occassionally</b>
+<b>Note: this project is far from complete and only gains traction occassionally</b>  
 <b>Note 2: this project is only public so that I can use GitHub pages to access it</b>
 
 A list building web app for Warhammer 40K 8th edition.   
@@ -20,6 +20,7 @@ The plan is to make it work for all the factions, but trying to convert all of t
 * Detachments
 * Need a way of easily identifying which wargear belongs to which model in a unit
 * Full faction support
+* Print view - points header obscures top row of table
 
 ## Installing/Running the project ##
 1. Clone repo
