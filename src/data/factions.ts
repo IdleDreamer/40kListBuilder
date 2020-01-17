@@ -1,5 +1,3 @@
-// TODO: should just be a list of names, icons, and file locations
-
 let factions: any = {
   "Adeptus Custodes": {
     "dataFile": "AdeptusCustodes.json",

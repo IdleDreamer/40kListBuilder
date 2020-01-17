@@ -1,7 +1,7 @@
 {
   "name": "40klistbuilder",
   "version": "0.0.1",
-  "description": "A simple list building webapp for 40K 8th editio",
+  "description": "A simple list building webapp for 40K 8th edition",
   "main": "src/init.ts",
   "license": "ISC",
   "devDependencies": {

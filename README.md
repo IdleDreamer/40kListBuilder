@@ -5,6 +5,7 @@
 * This project is intended only for personal use.
 * This repo is only public so that I can host the content on github pages. If you wish to clone this then please ensure that you have a copy of the relevant rule book.
 * This project is far from complete and only gains traction occassionally.
+* I cannot guarantee that the data represented in the app is valid as I have not been keeping up to date with the latest changes from Games Workshop.
 
 A list building web app for Warhammer 40K 8th edition.   
 I started this project because I did not like the alternatives - the official list builder (Combat Roster) is disgustingly under-featured and the free alternatives are either convoluted, not user-friendly, or just as under-featured.
