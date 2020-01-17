@@ -1,7 +1,10 @@
 # 40K List Builder 8e #
 
-<b>Note: this project is far from complete and only gains traction occassionally</b>  
-<b>Note 2: this project is only public so that I can use GitHub pages to access it</b>
+### Please Note ###
+* Warhammer 40K and associated content is the property of Games Workshop.
+* This project is intended only for personal use.
+* This repo is only public so that I can host the content on github pages. If you wish to clone this then please ensure that you have a copy of the relevant rule book.
+* This project is far from complete and only gains traction occassionally.
 
 A list building web app for Warhammer 40K 8th edition.   
 I started this project because I did not like the alternatives - the official list builder (Combat Roster) is disgustingly under-featured and the free alternatives are either convoluted, not user-friendly, or just as under-featured.
@@ -11,7 +14,7 @@ I started this project because I did not like the alternatives - the official li
 * Harlequins
 * Ynnari
 
-The plan is to make it work for all the factions, but trying to convert all of the data into rule-based structures that are common across all factions is a real mission. So I started with the ones that I personally use as I understand them better.
+The plan was to make it work for all the factions, but trying to convert all of the data into rule-based structures that are common across all factions is a real mission. So I started with the ones that I personally use as I understand them better.
 
 ## Outstanding work/Work to be done ##
 * Spells
